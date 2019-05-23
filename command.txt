@@ -1,0 +1,3 @@
+draw a line AB of length 50cm
+draw a line AB of length 50cm (87,89)
+

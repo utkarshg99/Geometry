@@ -1,0 +1,43 @@
+draw AB
+draw line ABC
+draw line AB (90,45) (45,89)
+draw a line segment of length 50cm between point A and C (90,80) and (140,80)
+
+make a Circle of radius 500cm
+make a circle A as center of diameter 40cm
+make a circle D (90,78) as center of diameter 60cm
+
+make a line of length 40cm
+
+make a line of length 40cm
+
+make a line of length 40cm
+
+make a circle of radius 50cm
+make a line of length 40cm
+make a circle D (90,78) as center of diameter 60cm
+draw a line segment of length 50cm between point A and C (90,80) and (140,80)
+draw AB
+
+draw A B (90,40) and (0,0)
+
+draw A B (90,40) and (0,0)
+
+draw A B (90,40) and (0,0)
+
+draw A B (90,40) and (0,0)
+
+draw a line AB of length 20 fucking cm
+draw a line AB of length 20cm
+draw a line A B of length 20cm
+
+draw a line AB of length 20 cm
+draw a line AB of length 20cm
+
+draw a line AB of length 20cm
+
+draw a line AB of length 20 fucking cm
+
+draw a line AB of length 20 fucking cm
+draw a line AB of length 20 fucking cm
+draw a line ABC of length 20 fucking cm
