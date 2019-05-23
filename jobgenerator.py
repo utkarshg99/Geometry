@@ -49,3 +49,8 @@ def genpol(strng, dicti, lj=[]):
         else:
             return lj2
     return lj
+
+def poljob(strng, subtype, pj=[], dicti={}, ptlst=[]):
+    if(ptlst!=[]):
+        pj.append(tuple(ptlst))
+    return (pj, dicti)

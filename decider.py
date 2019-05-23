@@ -2,7 +2,7 @@ import re
 linelist=['connect', 'join', 'line', 'segment', 'line-segment']
 circlelist=['circle', 'radius', 'diameter', 'centre', 'center']
 polylist=['triangle', 'square', 'rectangle', 'quadrilateral', 'pentagon', 'hexagon', 'heptagon', 'octagon', 'nonagon', 'decagon']
-mapped={'triangle':'3', 'quadrilateral':'4', 'pentagon':'5', 'hexagon':'6', 'heptagon':'7', 'octagon':'8', 'nonagon':'9', 'decagon':'10'}
+mapped={'triangle':'3', 'quadrilateral':'4', 'pentagon':'5', 'hexagon':'6', 'heptagon':'7', 'octagon':'8', 'nonagon':'9', 'decagon':'10', 'square':'sq', 'rectangle':'rect'}
 def decide(strn):
     regpoly=r'([A-Z])+?'
     plit=re.finditer(regpoly, strn)
