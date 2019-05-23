@@ -21,7 +21,12 @@ while True:
     fly.write(strn+'\n')
     if(len(strn)==0):
         fly.close()
+        mkd.write('\n')
         mkd.close()
+        lists.write('\n')
+        lists.close()
+        dic.write('\n')
+        dic.close()
         break
     dicti = gt(strn, dicti)
     (ftype, subtype)=decide(strn)
@@ -30,17 +35,23 @@ while True:
         (lj, dicti)=ljob(lj, lent, ptA, ptB, lst, dicti)
         print('line job update')
         print((lj, dicti))
+        lists.write(str(lj)+'\n')
         mkd.write('line job update\n')
+        dic.write(json.dumps(dicti)+'\n')
     elif(ftype == 'circle'):
         (cen, rad, lst)=make_circle(strn, dicti)
         (cj, dicti)=cjob(cj, rad, cen, lst, dicti)
         print('circle job update')
         print((cj, dicti))
+        lists.write(str(cj)+'\n')
         mkd.write('circle job update\n')
+        dic.write(json.dumps(dicti)+'\n')
     else:
         print('polygon job update, multiple line generating... : Sub-type : '+subtype)
         if(subtype!='' and subtype!='sq' and subtype!='rect'):
             ptlst=make_poly_gen(strn, dicti)
         (pj, dicti)=poljob(strn, subtype, pj, dicti, ptlst)
         print((pj, dicti))
+        lists.write(str(pj)+'\n')
         mkd.write('polygon job update, multiple line generating... : Sub-type : '+subtype+'\n')
+        dic.write(json.dumps(dicti)+'\n')
