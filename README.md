@@ -16,3 +16,5 @@
 
 * Supply all coordinates
 * Regular polygons when center and length of side is supplied
+* Squares
+* Rectangles
