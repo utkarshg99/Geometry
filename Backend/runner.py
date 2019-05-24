@@ -7,6 +7,7 @@ from decider import decide
 from get_data import make_circle
 from get_data import make_line
 from get_data import make_poly_gen
+from get_data import make_poly_reg
 import json
 dicti={}
 lj=[]
@@ -50,6 +51,8 @@ while True:
         print('polygon job update, multiple line generating... : Sub-type : '+subtype)
         if(subtype!='' and subtype!='sq' and subtype!='rect'):
             ptlst=make_poly_gen(strn, dicti)
+        if(subtype[len(subtype)-1]=='r'):
+            (ptlst, dicti)=make_poly_reg(strn, dicti, subtype[:len(subtype)-1])
         (pj, dicti)=poljob(strn, subtype, pj, dicti, ptlst)
         print((pj, dicti))
         lists.write(str(pj)+'\n')

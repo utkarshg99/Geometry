@@ -22,6 +22,8 @@ def decide(strn):
             return ('circle', cl)
     for pl in polylist:
         if(pl in strn):
+            if('regular' in strn):
+                return ('poly', mapped[pl]+'r')
             return ('poly', mapped[pl])
     if(n!=0 and n!=2):
         return ('poly', str(n))

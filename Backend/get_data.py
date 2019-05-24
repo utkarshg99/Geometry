@@ -1,4 +1,5 @@
 import re
+import math
 from helpers import getdict
 def make_circle(strn, dicti={}):
     reglen=r"([-+]?\d+) *?cm"
@@ -58,6 +59,45 @@ def make_poly_gen(strn, dicti={}):
         if(pt.group(1) in key):
             lst_pts.append(dicti[pt.group(1)])
     return lst_pts
+
+def make_poly_reg(strn, dicti={}, subtype=''):
+    lst_pts=[]
+    reglen=r"([-+]?\d+) *?cm"
+    mtiter=re.finditer(reglen, strn)
+    leng=0
+    if(subtype==''):
+        return
+    n=int(subtype)
+    for tr in mtiter:
+        leng=float(tr.group(1))
+        break
+    angdif=math.pi*2/n
+    r=leng/(2*math.sin(angdif/2))
+    r=float('%.4f'%(r))
+    cen=(0,0)
+    key=dicti.keys()
+    regpt=r"([A-Z]).*?"
+    matchiter_pts=re.finditer(regpt, strn)
+    for pt in matchiter_pts:
+        if(pt.group(1) in key):
+            cen=dicti[pt.group(1)]
+        else:
+            dicti[pt.group(1)]=cen
+    if (cen==(0,0)):
+        regex_cords=r"(\(([-+]?\d+),.*?([-+]?\d+)\))"
+        matchiter_cord=re.finditer(regex_cords, strn)
+        for cord in matchiter_cord:
+            cen=(float(cord.group(2)),float(cord.group(3)))
+    ang=0
+    print(r)
+    for i in range(n):
+        ang=i*angdif
+        x1=cen[0]+r*math.cos(ang)
+        y1=cen[1]+r*math.sin(ang)
+        x1=float('%.4f'%(x1))
+        y1=float('%.4f'%(y1))
+        lst_pts.append((x1,y1))
+    return (lst_pts, dicti)
 
 # strn = "draw a circle of radius length 30cm"
 # strn="draw a circle with centre C having coords (70, 67) with dia=40cm"
