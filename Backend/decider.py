@@ -19,6 +19,11 @@ def decide(strn):
                 return ('line', ll)
     for cl in circlelist:
         if(cl in strn):
+            if(cl=='center' or cl=='centre'):
+                for pl in polylist:
+                    if(pl in strn):
+                        if('regular' in strn):
+                            return ('poly', mapped[pl]+'r')
             return ('circle', cl)
     for pl in polylist:
         if(pl in strn):

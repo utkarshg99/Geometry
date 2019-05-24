@@ -99,6 +99,8 @@ def make_poly_reg(strn, dicti={}, subtype=''):
         lst_pts.append((x1,y1))
     return (lst_pts, dicti)
 
+def make_square(strn, dicti={}):
+    pass
 # strn = "draw a circle of radius length 30cm"
 # strn="draw a circle with centre C having coords (70, 67) with dia=40cm"
 # strn = "draw a line conecting points A with co-ordinates (90,90) and (30,50) of length 230 cm"

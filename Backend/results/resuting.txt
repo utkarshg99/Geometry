@@ -52,3 +52,10 @@ polygon job update, multiple line generating... : Sub-type : 4r
 
 polygon job update, multiple line generating... : Sub-type : 4r
 
+circle job update
+polygon job update, multiple line generating... : Sub-type : 6r
+
+polygon job update, multiple line generating... : Sub-type : 6
+circle job update
+polygon job update, multiple line generating... : Sub-type : 6r
+
