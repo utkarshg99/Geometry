@@ -26,11 +26,22 @@ def make_circle(strn, dicti={}):
         return ((0, 0), leng, ptlst)
 
 def make_line(strn, dicti={}):
-    reglen=r"([-+]?\d+).*?cm"
+    regslope=r'(([-+]?\d+) *?cm)'
+    reglen=r"([-+]?\d+) *?cm"
     mtiter=re.finditer(reglen, strn)
     leng=0
     for tr in mtiter:
         leng=float(tr.group(1))
+        break
+    nsiter=re.finditer(regslope, strn)
+    for tr in nsiter:
+        nslope=tr.group(1)
+        strn=strn.replace(nslope, '')
+    regslp=r'slope ([-+]?\d+)'
+    sliter=re.finditer(regslp, strn)
+    slope=0
+    for tr in sliter:
+        slope=float(tr.group(1))
         break
     regpt=r"([A-Z]).*?"
     matchiter_pts=re.finditer(regpt, strn)
@@ -44,11 +55,11 @@ def make_line(strn, dicti={}):
             ptlst.append(pt.group(1))
     ptlst.reverse()
     if(len(ptcrd)==2):
-        return (ptcrd[0], ptcrd[1], 0, ptlst)
+        return (ptcrd[0], ptcrd[1], 0, ptlst, slope)
     if(len(ptcrd)==1):
-        return (ptcrd[0], (0, 0), leng, ptlst)
+        return (ptcrd[0], (0, 0), leng, ptlst, slope)
     if(len(ptcrd)==0):
-        return ((0, 0), (0, 0), leng, ptlst)
+        return ((0, 0), (0, 0), leng, ptlst, slope)
 
 def make_poly_gen(strn, dicti={}):
     lst_pts=[]
@@ -93,17 +104,26 @@ def make_poly_reg(strn, dicti={}, subtype=''):
     ang=0
     i=0
     matchiter_pts=re.finditer(regpt, strn)
-    for pt in matchiter_pts:
-        if(i==n):
-            break
-        ang=i*angdif
-        x1=cen[0]+r*math.cos(ang)
-        y1=cen[1]+r*math.sin(ang)
-        x1=float('%.4f'%(x1))
-        y1=float('%.4f'%(y1))
-        lst_pts.append((x1,y1))
-        dicti[pt.group(1)]=(x1,y1)
-        i+=1
+    if(t=='n'):
+        for pt in matchiter_pts:
+            if(i==n):
+                break
+            ang=i*angdif
+            x1=cen[0]+r*math.cos(ang)
+            y1=cen[1]+r*math.sin(ang)
+            x1=float('%.4f'%(x1))
+            y1=float('%.4f'%(y1))
+            lst_pts.append((x1,y1))
+            dicti[pt.group(1)]=(x1,y1)
+            i+=1
+    else:
+        for i in range(n):
+            ang=i*angdif
+            x1=cen[0]+r*math.cos(ang)
+            y1=cen[1]+r*math.sin(ang)
+            x1=float('%.4f'%(x1))
+            y1=float('%.4f'%(y1))
+            lst_pts.append((x1,y1))
     return (lst_pts, dicti)
 
 def make_square(strn, sub, dicti={}):

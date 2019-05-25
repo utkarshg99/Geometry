@@ -83,3 +83,69 @@ make a regular triangle JKL with side-length 60cm and centre D
 
 make a regular triangle JKL with side-length 60cm and centre D
 
+draw AB of length 25 kcm
+
+generate AB of length 40cm
+
+make a regular hexagon of side-length 6cm
+
+make a regular hexagon ABCDEF  of side-length 6cm
+make a regular hexagon F of side-length 6cm
+
+make a regular hexagon F of side-length 6cm
+
+make a regular hexagon of side-length 6cm
+
+make a regular hexagon of side-length 6cm
+make a regular hexagon ABCDEF of side-length 6cm
+make a regular hexagon ABCDEF and center K of side-length 6cm
+
+make a regular hexagon ABCDEF and center K of side-length 6cm
+
+make a regular hexagon center K of side-length 6cm
+
+make a regular hexagon center K (6,0) of side-length 6cm
+
+draw a line AB of length 50cm
+draw a line AB of length 50cm and slope 1
+
+draw a line AB of length 50cm and slope 1
+draw a line AB of length 50cm and slope 2
+draw a line AB (0,0) (0,0) of length 50cm and slope 2
+
+draw a line AB of length 50cm and slope 2
+B (0,0)
+draw a line AB of length 50cm and slope 3
+
+B (0,0)
+draw a line AB of length 50cm and slope 2
+
+make a line AB of length 6cm
+make a line AB of length 6cm
+make a line AB of length 6cm and slope 4
+A (0,0) B (0,0)
+make a line AB of length 6cm and slope 4
+
+make a line AB of length 80cm
+make a line AB of length 80cm and slope 60cm
+make a line AB of length 80cm and slope 60
+
+make a line AB of length 80cm
+make a line AB of length 80cm and slope 60
+
+make a line AB of length 80cm
+make a line AB of length 80cm and slope 60
+make a line AB of length 80cm and slope 60cm
+
+make a line AB of length 80cm
+make a line AB of length 80cm and slope 60
+make a line AB of length 50cm
+make a line AB of length 40cm and slope 1
+make a line AB of length 50cm
+make a line AB of length 40cm and slope 1
+
+make a line AB of length 10cm
+make a line AB of length 10cm and slope 1
+clear
+clear
+

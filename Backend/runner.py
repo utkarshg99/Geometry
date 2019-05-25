@@ -1,3 +1,4 @@
+import re
 from helpers import getdict as gt
 from endpoint_extractor import extract as ex
 from jobgenerator import ljob
@@ -20,6 +21,31 @@ lists=open('./results/lists.txt','a')
 dic=open('./results/dictionaries.txt','a')
 while True:
     strn=input('Enter the command -> (Leave it empty to end excution) <- : ')
+    if(strn=='clear stack'):
+        dicti={}
+        continue
+    if(strn=='status'):
+        print("Dictionary : ")
+        print(dicti)
+        print("Current Line Jobs : ")
+        print(lj)
+        print("Current Circle Jobs : ")
+        print(cj)
+        print("Current Polygon Jobs : ")
+        print(pj)
+        continue
+    if(strn=='clear all'):
+        dicti={}
+        lj=[]
+        cj=[]
+        pj=[]
+        continue
+    if(strn.startswith('pop')):
+        reg=r'([A-Z])+.*?'
+        matchiter=re.finditer(reg, strn)
+        for tr in matchiter:
+            dicti.pop(tr.group(1))
+        continue
     fly.write(strn+'\n')
     if(len(strn)==0):
         fly.close()
@@ -33,8 +59,9 @@ while True:
     dicti = gt(strn, dicti)
     (ftype, subtype)=decide(strn)
     if(ftype == 'line'):
-        (ptA, ptB, lent, lst)=make_line(strn, dicti)
-        (lj, dicti)=ljob(lj, lent, ptA, ptB, lst, dicti)
+        slope=0
+        (ptA, ptB, lent, lst, slope)=make_line(strn, dicti)
+        (lj, dicti)=ljob(lj, slope, lent, ptA, ptB, lst, dicti)
         print('line job update')
         print((lj, dicti))
         lists.write(str(lj)+'\n')
@@ -48,7 +75,7 @@ while True:
         lists.write(str(cj)+'\n')
         mkd.write('circle job update\n')
         dic.write(json.dumps(dicti)+'\n')
-    else:
+    elif(ftype == 'poly'):
         print('polygon job update, multiple line generating... : Sub-type : '+subtype)
         if(subtype!='' and subtype!='sq' and subtype!='rect'):
             ptlst=make_poly_gen(strn, dicti)
@@ -61,3 +88,5 @@ while True:
         lists.write(str(pj)+'\n')
         mkd.write('polygon job update, multiple line generating... : Sub-type : '+subtype+'\n')
         dic.write(json.dumps(dicti)+'\n')
+    else:
+        print("Undealt Currently")

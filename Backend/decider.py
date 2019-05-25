@@ -40,7 +40,7 @@ def decide(strn):
         return ('poly', str(n))
     if(n==2):
         return('line', '')
-    return ('poly', '')
+    return ('undealt', '')
 
 # strn='draw a line AB'
 # print(decide(strn))
