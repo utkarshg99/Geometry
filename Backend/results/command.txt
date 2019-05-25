@@ -68,3 +68,18 @@ make square ABCD of length 5cm
 
 make square ABCD of length 5cm
 
+make a regular triangle ABC of length 20cm
+
+make a square BCFG of length 80cm
+
+make a square BCFG of length 80cm
+
+make a regular triangle BCF having centre with side-length 80cm
+
+make a regular triangle JKL with side-length 60cm and centre D
+
+make a regular triangle JKL with side-length 60cm and centre D
+make a regular triangle JKL with side-length 60cm and centre D
+
+make a regular triangle JKL with side-length 60cm and centre D
+

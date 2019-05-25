@@ -55,7 +55,7 @@ while True:
         if(subtype[len(subtype)-1]=='r'):
             (ptlst, dicti)=make_poly_reg(strn, dicti, subtype[:len(subtype)-1])
         if(subtype=='sq' or subtype=='sq4'):
-            ptlst=make_square(strn, subtype, dicti)
+            (ptlst, dicti)=make_square(strn, subtype, dicti)
         (pj, dicti)=poljob(strn, subtype, pj, dicti, ptlst)
         print((pj, dicti))
         lists.write(str(pj)+'\n')

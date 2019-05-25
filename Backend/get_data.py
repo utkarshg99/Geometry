@@ -65,8 +65,10 @@ def make_poly_reg(strn, dicti={}, subtype=''):
     reglen=r"([-+]?\d+) *?cm"
     mtiter=re.finditer(reglen, strn)
     leng=0
-    if(subtype==''):
-        return
+    t=''
+    if(subtype[len(subtype)-1]=='n'):
+        t='n'
+        subtype=subtype[:len(subtype)-1]
     n=int(subtype)
     for tr in mtiter:
         leng=float(tr.group(1))
@@ -89,13 +91,19 @@ def make_poly_reg(strn, dicti={}, subtype=''):
         for cord in matchiter_cord:
             cen=(float(cord.group(2)),float(cord.group(3)))
     ang=0
-    for i in range(n):
+    i=0
+    matchiter_pts=re.finditer(regpt, strn)
+    for pt in matchiter_pts:
+        if(i==n):
+            break
         ang=i*angdif
         x1=cen[0]+r*math.cos(ang)
         y1=cen[1]+r*math.sin(ang)
         x1=float('%.4f'%(x1))
         y1=float('%.4f'%(y1))
         lst_pts.append((x1,y1))
+        dicti[pt.group(1)]=(x1,y1)
+        i+=1
     return (lst_pts, dicti)
 
 def make_square(strn, sub, dicti={}):
@@ -141,7 +149,7 @@ def make_square(strn, sub, dicti={}):
     ptlst.append(tl)
     ptlst.append(tr)
     ptlst.append(br)
-    return ptlst    
+    return (ptlst, dicti)   
     
 
 

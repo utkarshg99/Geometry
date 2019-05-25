@@ -22,12 +22,16 @@ def decide(strn):
             if(cl=='center' or cl=='centre'):
                 for pl in polylist:
                     if(pl in strn):
-                        if('regular' in strn):
+                        if('regular' in strn or 'equilateral' in strn):
+                            if(mapped[pl].isdigit() and int(mapped[pl])<=n):
+                                return('poly', mapped[pl]+'nr')
                             return ('poly', mapped[pl]+'r')
             return ('circle', cl)
     for pl in polylist:
         if(pl in strn):
-            if('regular' in strn):
+            if('regular' in strn or 'equilateral' in strn):
+                if(mapped[pl].isdigit() and int(mapped[pl])<=n):
+                    return('poly', mapped[pl]+'nr')
                 return ('poly', mapped[pl]+'r')
             if(pl=="square" and n==4):
                 return ('poly', 'sq4')
