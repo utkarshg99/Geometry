@@ -19,4 +19,10 @@
 * Squares
 * Rectangles
 
-### Currentl supports on cm.
+### Currently supports only 'cm' as unit of length.
+
+### Commands for operating (Specials):
+* 'clear stack' : removes all points from point stack, preserves all jobs generated.
+* 'clear all' : resets the application to the default state
+* 'status' : shows current state of the point stack as well as line, circle and polygon jobs
+* 'pop [Point Name]' : removes the given point(s) from the point stack
