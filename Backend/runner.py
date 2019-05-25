@@ -8,6 +8,7 @@ from get_data import make_circle
 from get_data import make_line
 from get_data import make_poly_gen
 from get_data import make_poly_reg
+from get_data import make_square
 import json
 dicti={}
 lj=[]
@@ -53,6 +54,8 @@ while True:
             ptlst=make_poly_gen(strn, dicti)
         if(subtype[len(subtype)-1]=='r'):
             (ptlst, dicti)=make_poly_reg(strn, dicti, subtype[:len(subtype)-1])
+        if(subtype=='sq' or subtype=='sq4'):
+            ptlst=make_square(strn, subtype, dicti)
         (pj, dicti)=poljob(strn, subtype, pj, dicti, ptlst)
         print((pj, dicti))
         lists.write(str(pj)+'\n')

@@ -59,3 +59,12 @@ make a regualar hexagon with Centre as (90,80)
 make a regualar hexagon with centre as (90,80)
 make a regular hexagon with centre as (90,80)
 
+make a square (90,90) length 5cm
+[A[Bmake a square ABCD (80,80) length 5cm
+
+make square ABCD of length 5cm
+
+make square ABCD of length 5cm
+
+make square ABCD of length 5cm
+

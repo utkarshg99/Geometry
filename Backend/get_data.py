@@ -89,7 +89,6 @@ def make_poly_reg(strn, dicti={}, subtype=''):
         for cord in matchiter_cord:
             cen=(float(cord.group(2)),float(cord.group(3)))
     ang=0
-    print(r)
     for i in range(n):
         ang=i*angdif
         x1=cen[0]+r*math.cos(ang)
@@ -99,8 +98,53 @@ def make_poly_reg(strn, dicti={}, subtype=''):
         lst_pts.append((x1,y1))
     return (lst_pts, dicti)
 
-def make_square(strn, dicti={}):
-    pass
+def make_square(strn, sub, dicti={}):
+    ptlst=[]
+    reglen=r"([-+]?\d+) *?cm"
+    mtiter=re.finditer(reglen, strn)
+    leng=0
+    for tr in mtiter:
+        leng=float(tr.group(1))
+        break
+    bl=(0,0)
+    key=dicti.keys()
+    regpt=r"([A-Z]).*?"
+    matchiter_pts=re.finditer(regpt, strn)
+    for pt in matchiter_pts:
+        if(pt.group(1) in key):
+            bl=dicti[pt.group(1)]
+        else:
+            dicti[pt.group(1)]=bl
+    if (bl==(0,0)):
+        regex_cords=r"(\(([-+]?\d+),.*?([-+]?\d+)\))"
+        matchiter_cord=re.finditer(regex_cords, strn)
+        for cord in matchiter_cord:
+            bl=(float(cord.group(2)),float(cord.group(3)))
+            break
+    tl=(bl[0], bl[1]+leng)
+    tr=(bl[0]+leng, bl[1]+leng)
+    br=(bl[0]+leng, bl[1])
+    x=0
+    if(sub=='sq4'):
+        matchiter_pts=re.finditer(regpt, strn)
+        for pt in matchiter_pts:
+            if(x==0):
+                dicti[pt.group(1)]=bl
+            if(x==1):
+                dicti[pt.group(1)]=tl
+            if(x==2):
+                dicti[pt.group(1)]=tr
+            if(x==3):
+                dicti[pt.group(1)]=br
+            x+=1
+    ptlst.append(bl)
+    ptlst.append(tl)
+    ptlst.append(tr)
+    ptlst.append(br)
+    return ptlst    
+    
+
+
 # strn = "draw a circle of radius length 30cm"
 # strn="draw a circle with centre C having coords (70, 67) with dia=40cm"
 # strn = "draw a line conecting points A with co-ordinates (90,90) and (30,50) of length 230 cm"
