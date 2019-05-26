@@ -149,3 +149,14 @@ make a line AB of length 10cm and slope 1
 clear
 clear
 
+make a rectangle ABCD with dimensions 50cm x 60cm
+make a square ABCD with dimensions 50cm bottom-left be (50,50)
+
+
+
+
+
+
+
+
+

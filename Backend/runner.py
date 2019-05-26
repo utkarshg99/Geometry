@@ -1,6 +1,6 @@
 import re
+import json
 from helpers import getdict as gt
-from endpoint_extractor import extract as ex
 from jobgenerator import ljob
 from jobgenerator import cjob
 from jobgenerator import poljob
@@ -9,18 +9,26 @@ from get_data import make_circle
 from get_data import make_line
 from get_data import make_poly_gen
 from get_data import make_poly_reg
-from get_data import make_square
-import json
+from get_data import make_quads
+
 dicti={}
 lj=[]
 cj=[]
 pj=[]
+
+commandlist={'clear stack':'reset point stack','status':'show all queued jobs','clear all':'reset application status','pop [_point(s)_]':'remove specified points from stack'}
+
 fly=open('./results/command.txt','a')
 mkd=open('./results/resuting.txt','a')
 lists=open('./results/lists.txt','a')
 dic=open('./results/dictionaries.txt','a')
+
 while True:
     strn=input('Enter the command -> (Leave it empty to end excution) <- : ')
+    if(strn=='show'):
+        for k, v in commandlist.items():
+            print('{:<16s}{:^5s}{:<20s}'.format(k,':',v))
+        continue
     if(strn=='clear stack'):
         dicti={}
         continue
@@ -56,6 +64,7 @@ while True:
         dic.write('\n')
         dic.close()
         break
+
     dicti = gt(strn, dicti)
     (ftype, subtype)=decide(strn)
     if(ftype == 'line'):
@@ -81,8 +90,8 @@ while True:
             ptlst=make_poly_gen(strn, dicti)
         if(subtype[len(subtype)-1]=='r'):
             (ptlst, dicti)=make_poly_reg(strn, dicti, subtype[:len(subtype)-1])
-        if(subtype=='sq' or subtype=='sq4'):
-            (ptlst, dicti)=make_square(strn, subtype, dicti)
+        if(subtype=='sq' or subtype=='sq4' or subtype=='rect' or subtype=='rect4'):
+            (ptlst, dicti)=make_quads(strn, subtype, dicti)
         (pj, dicti)=poljob(strn, subtype, pj, dicti, ptlst)
         print((pj, dicti))
         lists.write(str(pj)+'\n')

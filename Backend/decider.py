@@ -35,6 +35,8 @@ def decide(strn):
                 return ('poly', mapped[pl]+'r')
             if(pl=="square" and n==4):
                 return ('poly', 'sq4')
+            if(pl=="rectangle" and n==4):
+                return ('poly', 'rect4')
             return ('poly', mapped[pl])
     if(n!=0 and n!=2):
         return ('poly', str(n))

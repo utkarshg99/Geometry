@@ -126,11 +126,66 @@ def make_poly_reg(strn, dicti={}, subtype=''):
             lst_pts.append((x1,y1))
     return (lst_pts, dicti)
 
-def make_square(strn, sub, dicti={}):
+def make_quads(strn, sub, dicti={}):
     ptlst=[]
     reglen=r"([-+]?\d+) *?cm"
     mtiter=re.finditer(reglen, strn)
     leng=0
+    brea=0
+    for tr in mtiter:
+        brea=float(tr.group(1))
+        break
+    for tr in mtiter:
+        leng=float(tr.group(1))
+        break
+    if(leng==0):
+        leng=brea
+    bl=(0,0)
+    key=dicti.keys()
+    regpt=r"([A-Z]).*?"
+    matchiter_pts=re.finditer(regpt, strn)
+    for pt in matchiter_pts:
+        if(pt.group(1) in key):
+            bl=dicti[pt.group(1)]
+        else:
+            dicti[pt.group(1)]=bl
+    if (bl==(0,0)):
+        regex_cords=r"(\(([-+]?\d+),.*?([-+]?\d+)\))"
+        matchiter_cord=re.finditer(regex_cords, strn)
+        for cord in matchiter_cord:
+            bl=(float(cord.group(2)),float(cord.group(3)))
+            break
+    tl=(bl[0], bl[1]+leng)
+    tr=(bl[0]+brea, bl[1]+leng)
+    br=(bl[0]+brea, bl[1])
+    x=0
+    if(sub=='sq4' or sub=='rect4'):
+        matchiter_pts=re.finditer(regpt, strn)
+        for pt in matchiter_pts:
+            if(x==0):
+                dicti[pt.group(1)]=bl
+            if(x==1):
+                dicti[pt.group(1)]=tl
+            if(x==2):
+                dicti[pt.group(1)]=tr
+            if(x==3):
+                dicti[pt.group(1)]=br
+            x+=1
+    ptlst.append(bl)
+    ptlst.append(tl)
+    ptlst.append(tr)
+    ptlst.append(br)
+    return (ptlst, dicti)   
+    
+def make_rect(strn, sub, dicti={}):
+    ptlst=[]
+    reglen=r"([-+]?\d+) *?cm"
+    mtiter=re.finditer(reglen, strn)
+    leng=0
+    brea=0
+    for tr in mtiter:
+        brea=float(tr.group(1))
+        break
     for tr in mtiter:
         leng=float(tr.group(1))
         break
@@ -150,10 +205,10 @@ def make_square(strn, sub, dicti={}):
             bl=(float(cord.group(2)),float(cord.group(3)))
             break
     tl=(bl[0], bl[1]+leng)
-    tr=(bl[0]+leng, bl[1]+leng)
-    br=(bl[0]+leng, bl[1])
+    tr=(bl[0]+brea, bl[1]+leng)
+    br=(bl[0]+brea, bl[1])
     x=0
-    if(sub=='sq4'):
+    if(sub=='rect4'):
         matchiter_pts=re.finditer(regpt, strn)
         for pt in matchiter_pts:
             if(x==0):
@@ -169,9 +224,7 @@ def make_square(strn, sub, dicti={}):
     ptlst.append(tl)
     ptlst.append(tr)
     ptlst.append(br)
-    return (ptlst, dicti)   
-    
-
+    return (ptlst, dicti) 
 
 # strn = "draw a circle of radius length 30cm"
 # strn="draw a circle with centre C having coords (70, 67) with dia=40cm"
