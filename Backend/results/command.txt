@@ -173,3 +173,19 @@ make a line AB of length 78cm
 draw a line AC of length 50cm
 draw a circle with centre at C and radius 28cm
 
+
+
+A (90,50) and B (90, 30)
+
+A (90,50) and B (90, 30)
+
+A (90,50) and B (90, 30)
+A (90,50) and B (90, 30)
+
+A (90,50) and B (90, 30)
+
+A (90,50) and B (90, 30)
+
+A (90,50) and B (90, 30)
+
+

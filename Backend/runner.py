@@ -1,6 +1,7 @@
 import re
 import json
 from helpers import getdict as gt
+from helpers import eu_dist
 from jobgenerator import ljob
 from jobgenerator import cjob
 from jobgenerator import poljob
@@ -28,6 +29,33 @@ while True:
     if(strn=='show'):
         for k, v in commandlist.items():
             print('{:<16s}{:^5s}{:<20s}'.format(k,':',v))
+        continue
+    if(strn.startswith('get length') or strn.startswith('get distance') or strn.startswith('find length') or strn.startswith('calculate distance') or strn.startswith('calculate length') or strn.startswith('find distance')):
+        dicti=gt(strn,dicti)
+        regpt=r'([A-Z])'
+        regex_cords=r"(\(([-+]?\d+),.*?([-+]?\d+)\))"
+        matchiter=re.finditer(regpt, strn)
+        key=dicti.keys()
+        ptA=(0, 0)
+        ptB=(0, 0)
+        for tr in matchiter:
+            if(tr.group(1) in key):
+                ptA=dicti[tr.group(1)]
+            break
+        for tr in matchiter:
+            if(tr.group(1) in key):
+                ptB=dicti[tr.group(1)]
+            break
+        if(ptA==(0,0) and ptB==(0,0)):
+            matchiter=re.finditer(regex_cords, strn)
+            for tr in matchiter:
+                ptA=(float(tr.group(2)),float(tr.group(3)))
+                break
+            for tr in matchiter:
+                ptB=(float(tr.group(2)),float(tr.group(3)))
+                break
+        dist=eu_dist(ptA, ptB)
+        print("Distance between the given Points is : "+str(dist))
         continue
     if(strn=='clear stack'):
         dicti={}
