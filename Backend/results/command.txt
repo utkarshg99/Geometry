@@ -167,3 +167,9 @@ make a equilatral ASD of length 40cm
 make a equilateral ASD of length 40cm
 make a equilateral triangle ASD of length 40cm
 
+makea line AB of length 80cm
+
+make a line AB of length 78cm
+draw a line AC of length 50cm
+draw a circle with centre at C and radius 28cm
+
