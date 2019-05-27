@@ -26,3 +26,4 @@
 * 'clear all' : resets the application to the default state
 * 'status' : shows current state of the point stack as well as line, circle and polygon jobs
 * 'pop [Point Name]' : removes the given point(s) from the point stack
+* 'calculate distance <Points_or_coordinates -> Only  one of them>' : return distance between the first two points.
