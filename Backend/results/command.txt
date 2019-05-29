@@ -2456,3 +2456,11 @@ make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
 
 make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
 
+make a regular hexagon of side-length 50cm and (100,100)
+
+make a regular hexagon of side-length 50cm and centre (300,300)
+
+make a regular hexagon of side-length 100cm and centre (300,300)
+
+make a regular hexagon of side-length 200cm and centre (300,300)
+

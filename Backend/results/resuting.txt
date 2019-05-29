@@ -1408,3 +1408,11 @@ line job update
 polygon job update, multiple line generating... : Sub-type : 4
 polygon job update, multiple line generating... : Sub-type : 4
 
+polygon job update, multiple line generating... : Sub-type : 6r
+
+polygon job update, multiple line generating... : Sub-type : 6r
+
+polygon job update, multiple line generating... : Sub-type : 6r
+
+polygon job update, multiple line generating... : Sub-type : 6r
+
