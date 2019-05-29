@@ -30,4 +30,7 @@
 * 'pop [Point Name]' : removes the given point(s) from the point stack
 * 'calculate distance <Points_or_coordinates -> Only  one of them>' : return distance between the first two points.
 
+### Architecture:
+![alt text](https://firebasestorage.googleapis.com/v0/b/utkarshgx.appspot.com/o/images%2FGeometry.jpg?alt=media&token=264f8484-b2e0-48ae-8e55-e0730bbd0f94)
+
 ## To RUN : Execute geometry.exe on windows. Alternatively, use "python starter.py"
