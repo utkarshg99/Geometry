@@ -189,3 +189,2270 @@ A (90,50) and B (90, 30)
 A (90,50) and B (90, 30)
 
 
+make a circle of radius 60cm
+generate a line of length 80cm
+
+
+
+make a line AB of length 10cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+
+make a line AB of length 10cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+
+make a line AB of length 10cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+
+make a line AB of length 10cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+
+make a line AB of length 10cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 10cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+
+
+make a line AB of length 10cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 10cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 10cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 10cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 10cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 10cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 10cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 10cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 10cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 10cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 10cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 10cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 10cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 10cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 10cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 10cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 10cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+undefined
+
+undefined
+
+undefined
+
+undefined
+
+undefined
+
+undefined
+
+undefined
+
+undefined
+
+undefined
+
+undefined
+
+undefined
+
+undefined
+
+undefined
+
+undefined
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+
+undefined
+
+undefined
+
+undefined
+
+undefined
+
+undefined
+
+undefined
+
+undefined
+
+undefined
+
+undefined
+
+undefined
+
+make a line AB of length 80cm\nmake a circle of radius 80cm and centre C as (80, 60)\nmake a line CD of length 50cm\nmake a line EF (85,75) and (45,55)\nmake a polygon JKLM (90,80) (60,50) (50,60) (65,55)\nmake a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)\nmake a line CD of length 50cm\nmake a line EF (85,75) and (45,55)\nmake a polygon JKLM (90,80) (60,50) (50,60) (65,55)\nmake a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)\nmake a line CD of length 50cm\nmake a line EF (85,75) and (45,55)\nmake a polygon JKLM (90,80) (60,50) (50,60) (65,55)\nmake a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a line AB of length 80cm
+
+make a circle of radius 80cm and centre C as (80, 60)
+
+make a line CD of length 50cm
+
+make a line EF (85,75) and (45,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+
+make a polygon JKLM (90,80) (60,50) (50,60) (65,55)
+

@@ -23,9 +23,15 @@ fly=open('./results/command.txt','a')
 mkd=open('./results/resuting.txt','a')
 lists=open('./results/lists.txt','a')
 dic=open('./results/dictionaries.txt','a')
+linejobs=open('../Middleware/linejobs.uk','w')
+circlejobs=open('../Middleware/circlejobs.uk','w')
+polyjobs=open('../Middleware/polyjobs.uk','w')
+cmds=open('../Middleware/commands.uk','r')
+status=open('../Middleware/status.uk','w')
 
 while True:
-    strn=input('Enter the command -> (Leave it empty to end excution) <- : ')
+    # strn=input('Enter the command -> (Leave it empty to end excution) <- : ')
+    strn=cmds.readline()
     if(strn=='show'):
         for k, v in commandlist.items():
             print('{:<16s}{:^5s}{:<20s}'.format(k,':',v))
@@ -83,7 +89,7 @@ while True:
             dicti.pop(tr.group(1))
         continue
     fly.write(strn+'\n')
-    if(len(strn)==0):
+    if(len(strn)==0 or strn=='end'):
         fly.close()
         mkd.write('\n')
         mkd.close()
@@ -91,6 +97,15 @@ while True:
         lists.close()
         dic.write('\n')
         dic.close()
+        linejobs.write(str(lj))
+        linejobs.close()
+        circlejobs.write(str(cj))
+        circlejobs.close()
+        for x in pj:
+            polyjobs.write(str(x)+'\n')
+        polyjobs.close()
+        status.write("Go")
+        status.close()
         break
 
     dicti = gt(strn, dicti)
@@ -100,7 +115,7 @@ while True:
         (ptA, ptB, lent, lst, slope)=make_line(strn, dicti)
         (lj, dicti)=ljob(lj, slope, lent, ptA, ptB, lst, dicti)
         print('line job update')
-        print((lj, dicti))
+        # print((lj, dicti))
         lists.write(str(lj)+'\n')
         mkd.write('line job update\n')
         dic.write(json.dumps(dicti)+'\n')
@@ -108,7 +123,7 @@ while True:
         (cen, rad, lst)=make_circle(strn, dicti)
         (cj, dicti)=cjob(cj, rad, cen, lst, dicti)
         print('circle job update')
-        print((cj, dicti))
+        # print((cj, dicti))
         lists.write(str(cj)+'\n')
         mkd.write('circle job update\n')
         dic.write(json.dumps(dicti)+'\n')
@@ -121,7 +136,7 @@ while True:
         if(subtype=='sq' or subtype=='sq4' or subtype=='rect' or subtype=='rect4'):
             (ptlst, dicti)=make_quads(strn, subtype, dicti)
         (pj, dicti)=poljob(strn, subtype, pj, dicti, ptlst)
-        print((pj, dicti))
+        # print((pj, dicti))
         lists.write(str(pj)+'\n')
         mkd.write('polygon job update, multiple line generating... : Sub-type : '+subtype+'\n')
         dic.write(json.dumps(dicti)+'\n')
