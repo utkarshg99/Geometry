@@ -2464,3 +2464,9 @@ make a regular hexagon of side-length 100cm and centre (300,300)
 
 make a regular hexagon of side-length 200cm and centre (300,300)
 
+make a regular heptagon of length 120cm and center (500,300)
+
+make a circle of radius 500cm
+
+make a circle of radius 500cm
+

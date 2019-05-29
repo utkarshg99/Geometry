@@ -1,4 +1,5 @@
 import os
+os.system("npm i node-watch")
 if(os.name=='nt'):
     os.system('start "" python ./Backend/runit.py')
     os.system('start "" node ./Middleware/strserve.js')
