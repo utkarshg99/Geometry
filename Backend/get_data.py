@@ -2,6 +2,7 @@ import re
 import math
 from helpers import getdict
 def make_circle(strn, dicti={}):
+    cen =(0,0)
     reglen=r"([-+]?\d+) *?cm"
     mtiter=re.finditer(reglen, strn)
     leng=0
@@ -21,9 +22,14 @@ def make_circle(strn, dicti={}):
         else:
             ptlst.append(pt.group(1))
     if(len(ptcrd)==1):
-        return (ptcrd[0], leng, ptlst)
+        cen=ptcrd[0]
     if(len(ptcrd)==0):
-        return ((0, 0), leng, ptlst)
+        if (cen==(0,0)):
+            regex_cords=r"(\(([-+]?\d+),.*?([-+]?\d+)\))"
+            matchiter_cord=re.finditer(regex_cords, strn)
+            for cord in matchiter_cord:
+                cen=(float(cord.group(2)),float(cord.group(3)))
+    return (cen, leng, ptlst)
 
 def make_line(strn, dicti={}):
     regslope=r'(([-+]?\d+) *?cm)'

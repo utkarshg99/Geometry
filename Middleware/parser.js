@@ -59,6 +59,8 @@ function circle_parse_core(strn){
         crdx = parseFloat(m[3]);
         crdy = parseFloat(m[6]);
         rad = parseFloat(m[9]);
+        crdx-=rad;
+        crdy-=rad;
         instance=strkcircle(color, rad, crdx, crdy);
         ins.push(instance);
         len++;

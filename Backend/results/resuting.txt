@@ -1422,3 +1422,55 @@ circle job update
 
 circle job update
 
+circle job update
+polygon job update, multiple line generating... : Sub-type : 4
+polygon job update, multiple line generating... : Sub-type : 5r
+
+circle job update
+polygon job update, multiple line generating... : Sub-type : 4
+polygon job update, multiple line generating... : Sub-type : 5r
+
+circle job update
+polygon job update, multiple line generating... : Sub-type : 4
+polygon job update, multiple line generating... : Sub-type : 5r
+polygon job update, multiple line generating... : Sub-type : sq
+
+polygon job update, multiple line generating... : Sub-type : 6r
+
+polygon job update, multiple line generating... : Sub-type : 6r
+
+polygon job update, multiple line generating... : Sub-type : 6r
+circle job update
+
+polygon job update, multiple line generating... : Sub-type : 6r
+circle job update
+line job update
+
+polygon job update, multiple line generating... : Sub-type : 6r
+circle job update
+line job update
+
+polygon job update, multiple line generating... : Sub-type : 6r
+line job update
+circle job update
+
+circle job update
+
+line job update
+
+line job update
+
+circle job update
+
+circle job update
+
+circle job update
+
+circle job update
+polygon job update, multiple line generating... : Sub-type : 6r
+line job update
+
+circle job update
+polygon job update, multiple line generating... : Sub-type : 6r
+line job update
+

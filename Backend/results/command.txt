@@ -2470,3 +2470,77 @@ make a circle of radius 500cm
 
 make a circle of radius 500cm
 
+make a circle having center D (400,500) and radius 80cm.
+
+draw ABCG having co-ordinates (100,200) (400,600) (300,900) (750,650)
+
+generate a regular pentagon with centre as (900,600) and side-length 40cm
+
+make a circle having center D (400,500) and radius 80cm.
+
+draw ABCG having co-ordinates (100,200) (400,600) (300,900) (750,650)
+
+generate a regular pentagon with centre as (900,600) and side-length 40cm
+
+hell fuck 
+
+make a circle having center D (400,500) and radius 80cm.
+
+draw ABCG having co-ordinates (100,200) (400,600) (300,900) (750,650)
+
+generate a regular pentagon with centre as (900,600) and side-length 40cm
+
+hell fuck 
+
+make a square of length 150cm and bottom-left (100,100)
+
+make a regular hexagon of side 6cm with center at (100,100)
+
+make a regular hexagon of side 60cm with center at (100,100)
+
+make a regular hexagon of length 80cm and center (100,500)
+
+make a circle of radius 50cm and center (800,70)
+
+make a regular hexagon of length 80cm and center (100,500)
+
+make a circle of radius 50cm and center (800,70)
+
+line AB joining (100,500) and (800,70)
+
+make a regular hexagon of length 80cm and center (100,500)
+
+make a circle center (800,70) of radius 50cm
+
+line AB joining (100,500) and (800,70)
+
+make a regular hexagon of length 80cm and center (100,500)
+
+line AB joining (100,500) and (800,70)
+
+make a circle center B and radius 50cm
+
+make a circle (900,100) and radius 40cm
+
+make a line AB (0,0) and (100,100)
+
+make a line AB (0,0) and (100,100)
+
+make a circle (900,100) and radius 60cm
+
+make a circle with center (100,100) and radius 60cm
+
+make a circle with center (0,0) and radius 60cm
+
+make a circle of radius 50cm and centre (100,100)
+
+make a regular hexagon of side-length 100cm and centre (800,750)
+
+make a linke joining points AB (100,100) and (800,750)
+
+make a circle of radius 50cm and centre (100,100)
+
+make a regular hexagon of side-length 100cm and centre (800,250)
+
+make a linke joining points AB (100,100) and (800,250)
+

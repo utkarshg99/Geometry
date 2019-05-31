@@ -192,7 +192,7 @@ function configure(){
     bgcolor=(document.getElementById('bgcolor').value == '' || document.getElementById('bgcolor').value == null)?'#DAA520':document.getElementById('bgcolor').value;
     $(document).ready(function() {
         engine = new bHive({
-            width: screen.width,
+            width: screen.width*0.989,
             height: 700,
             domobject: 'stageholder',
             backgroundColor: bgcolor
