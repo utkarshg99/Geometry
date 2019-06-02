@@ -2544,3 +2544,21 @@ make a regular hexagon of side-length 100cm and centre (800,250)
 
 make a linke joining points AB (100,100) and (800,250)
 
+make a regular hexagon of side-length 80cm and centre (80,50)
+
+make a circle with radius 90cm and center (100,500)
+
+join AB (80,50) and (100,500)
+
+make a regular hexagon of side-length 80cm and centre (100,200)
+
+make a circle with radius 90cm and center (100,500)
+
+join AB (80,50) and (100,500)
+
+make a regular hexagon of length 80cm and center (200,250)
+
+generate a circle of radius 50cm and center (500,400)
+
+join AB (200,250) and (500,400)
+
