@@ -4,6 +4,7 @@ var l = 0;
 var stat = '';
 var snpstat = false;
 scrht = 640;
+var quesarr=[];;
 
 $(document).keyup(function (e) {
     if (e.key === "Escape") {

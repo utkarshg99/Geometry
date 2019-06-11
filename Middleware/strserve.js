@@ -8,19 +8,27 @@ var sendjson = {
 };
 
 console.log("Initiating Server...");
+
 function makejson() {
-    js={};
-    lj=fs.readFileSync('./Middleware/linejobs.uk', 'utf8');
-    cj=fs.readFileSync('./Middleware/circlejobs.uk', 'utf8');
-    pj=fs.readFileSync('./Middleware/polyjobs.uk', 'utf8');
-    js.lj=lj;
-    js.pj=pj;
-    js.cj=cj;
+    js = {};
+    lj = fs.readFileSync('./Middleware/linejobs.uk', 'utf8');
+    cj = fs.readFileSync('./Middleware/circlejobs.uk', 'utf8');
+    pj = fs.readFileSync('./Middleware/polyjobs.uk', 'utf8');
+    js.lj = lj;
+    js.pj = pj;
+    js.cj = cj;
+    return js;
+}
+
+function qjson() {
+    js = {};
+    q = fs.readFileSync('./Middleware/questions.uk', 'utf8');
+    js.q = q;
     return js;
 }
 
 console.log("Server Launched.");
-console.log("Waiting for Requests at "+portNumber+" .....");
+console.log("Waiting for Auto-Draw Requests at " + portNumber + " .....");
 http.createServer(function (request, response) {
     console.log("Incoming Connection.");
     if (request.method == 'POST') {
@@ -35,8 +43,8 @@ http.createServer(function (request, response) {
             datastat = "Wait";
             fs.writeFile("./Middleware/commands.uk", post, (err) => {
                 if (err) console.log(err);
-                console.log("\n"+post+"\n");
-                console.log("Commands are Recorded.");
+                console.log("\n" + post + "\n");
+                console.log("Commands were Recorded.");
                 fs.writeFile("./Middleware/status.uk", datastat, (err) => {
                     if (err) console.log(err);
                     console.log("Processing.....");
@@ -48,7 +56,7 @@ http.createServer(function (request, response) {
                             if (datax == "Go" && response != "") {
                                 response.setHeader('Content-Type', 'application/json');
                                 response.setHeader("Access-Control-Allow-Origin", "*");
-                                sendjson=makejson();
+                                sendjson = makejson();
                                 response.end(JSON.stringify(sendjson));
                                 console.log("Processed Successfully.");
                                 response = "";
@@ -60,3 +68,43 @@ http.createServer(function (request, response) {
         });
     }
 }).listen(portNumber);
+
+var sdportNumber = 7070;
+console.log("Waiting for Self-Draw Requests at " + sdportNumber + " .....");
+http.createServer(function (request, response) {
+    console.log("Incoming Connection.");
+    if (request.method == 'POST') {
+        var body = '';
+        request.on('data', function (data) {
+            body += data;
+        });
+
+        request.on('end', function () {
+            var post = qs.parse(body);
+            post = post.commands;
+            fs.writeFile("./Middleware/questions.uk", post, (err) => {
+                if (err) console.log(err);
+                console.log("\n" + post + "\n");
+                console.log("Questions were Recorded.");
+                response.setHeader('Content-Type', 'application/json');
+                response.setHeader("Access-Control-Allow-Origin", "*");
+                sendjson = {
+                    'value': "Questions were Recorded."
+                }
+                response.end(JSON.stringify(sendjson));
+            });
+        });
+    }
+}).listen(sdportNumber);
+
+var qportNumber = 6060;
+console.log("Waiting for Question Requests at " + qportNumber + " .....");
+http.createServer(function (request, response) {
+    console.log("Incoming Connection.");
+    response.setHeader('Content-Type', 'application/json');
+    response.setHeader("Access-Control-Allow-Origin", "*");
+    sendjson = qjson();
+    response.end(JSON.stringify(sendjson));
+    console.log("Processed Successfully.");
+    response = "";
+}).listen(qportNumber);
