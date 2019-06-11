@@ -11,6 +11,7 @@
     <script src="./js/connector.js"></script>
     <script src="./js/make.js"></script>
     <script src="./js/runner.js"></script>
+    <script src="./js/gridmake.js"></script>
     <script src="../Middleware/parser.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -32,7 +33,14 @@
                 <input type="text" class="form-control" id="fillcolor" placeholder="Enter Fill Color" name="fillcolor">
             </div>
         </div>
-        <button class="btn btn-primary" onclick="configure();" autofocus>Set Parameters</button>
+        <div class="row">
+            <div class="col-md-6">
+                <button class="btn btn-primary" onclick="configure();" autofocus>Set Parameters</button>
+            </div>
+            <div style="text-align: left;" class="col-md-6">
+                <button onclick="drawBoard();" class="btn btn-success">Make Grid</button>
+            </div>
+        </div>
         <div><br /></div>
         <h4>For Actual Server-Based Shape Generation:</h4>
         <div class="row">
@@ -88,9 +96,16 @@
                 <input type="text" class="form-control" id="yd" placeholder="Enter Y" name="yd">
             </div>
         </div>
-        <button onclick="addpts();" class="btn btn-warning">Add Point</button><br /><br />
-        <button onclick="drawer();" class="btn btn-default">Submit Instance</button><br /><br />
-        <button onclick="make();" class="btn btn-success">Get It Done!!!</button>
+        <div class="row">
+            <div class="col-md-6">
+                <button onclick="addpts();" class="btn btn-warning">Add Point</button>
+            </div>
+            <div style="text-align: left;" class="col-md-6">
+                <button onclick="drawer();" class="btn btn-default">Submit Instance</button>
+                <button onclick="make();" class="btn btn-success" style="float: right;">Get It Done!!!</button>
+            </div>
+            <br/><br/>
+        </div>
         <script src="./js/speechtotext.js"></script>
     </div>
 </body>

@@ -2,7 +2,7 @@ var num_of_imgs = 1;
 var loaded_imgs = 0;
 var color;
 var bgcolor;
-var scrht=700;
+var scrht=680;
 var x, y, r, w, h, pts=[];
 var ins=[], len=0;
 var f=0;
@@ -189,8 +189,8 @@ function make(){
 }
 
 function configure(){
-    color=(document.getElementById('fillcolor').value == '' || document.getElementById('fillcolor').value == null)?'#FFFFFF':document.getElementById('fillcolor').value;
-    bgcolor=(document.getElementById('bgcolor').value == '' || document.getElementById('bgcolor').value == null)?'#DAA520':document.getElementById('bgcolor').value;
+    color=(document.getElementById('fillcolor').value == '' || document.getElementById('fillcolor').value == null)?'red':document.getElementById('fillcolor').value;
+    bgcolor=(document.getElementById('bgcolor').value == '' || document.getElementById('bgcolor').value == null)?'azure':document.getElementById('bgcolor').value;
     $(document).ready(function() {
         engine = new bHive({
             width: screen.width*0.989,

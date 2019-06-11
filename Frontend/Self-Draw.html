@@ -15,16 +15,29 @@
     <script src="../Middleware/parser.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="./js/gridmake.js"></script>
 </head>
 
 <body>
     <div id="stageholder" onmousemove="displayer(event);" onclick="storecrd(event);process();"></div>
-    <div style="text-align: center;">
-        <button onclick="setstat('line')" class="btn btn-default">Line</button>
-        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-        <button onclick="setstat('circle')" class="btn btn-default">Circle</button>
+    <div class="row">
+        <div class="col-md-6">
+            <button onclick="setstat('line')" style="float: right;" class="btn btn-success">Line</button>
+            <button onclick="setsnpstat()" style="float: left;" class="btn btn-warning">Snap to Fit</button>
+        </div>
+        <div style="text-align: left;" class="col-md-6">
+            <button onclick="setstat('circle')" class="btn btn-success" style="float: left;">Circle</button>
+            <button class="btn btn-warning" onclick="drawBoard();" style="float:right;">Make Grid</button>
+        </div>
     </div>
-    <div id="cords" style="text-align: center"></div>
+    <div class="row">
+        <div class="col-md-6">
+            <div id="cords" style="text-align: center"></div>
+        </div>
+        <div style="text-align: left;" class="col-md-6">
+            <div id="snps" style="text-align: center"></div>
+        </div>
+    </div>
     <div><br /></div>
     <div class="container-fluid">
         <h3><b>Configure Appearance:</b></h3>
@@ -39,8 +52,15 @@
                 <input type="text" class="form-control" id="fillcolor" placeholder="Enter Fill Color" name="fillcolor">
             </div>
         </div>
-        <button class="btn btn-primary" onclick="configure();" autofocus>Set Parameters</button>
+        <div class="row">
+            <div class="col-md-6">
+                <button class="btn btn-primary" onclick="configure();" autofocus>Set Parameters</button>
+            </div>
+        </div>
         <div><br /></div>
         <script src="./js/speechtotext.js"></script>
     </div>
+
+    <script type="text/javascript" language="javascript">
+    </script>
 </body>
