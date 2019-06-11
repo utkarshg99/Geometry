@@ -7,6 +7,7 @@ var sendjson = {
     status: 'Go for IT.'
 };
 
+console.log("Initiating Server...");
 function makejson() {
     js={};
     lj=fs.readFileSync('./Middleware/linejobs.uk', 'utf8');
@@ -18,9 +19,10 @@ function makejson() {
     return js;
 }
 
-console.log("Server Launched");
+console.log("Server Launched.");
+console.log("Waiting for Requests at "+portNumber+" .....");
 http.createServer(function (request, response) {
-    console.log("Incoming Connection");
+    console.log("Incoming Connection.");
     if (request.method == 'POST') {
         var body = '';
         request.on('data', function (data) {
@@ -33,11 +35,11 @@ http.createServer(function (request, response) {
             datastat = "Wait";
             fs.writeFile("./Middleware/commands.uk", post, (err) => {
                 if (err) console.log(err);
-                console.log(post);
+                console.log("\n"+post+"\n");
                 console.log("Commands are Recorded.");
                 fs.writeFile("./Middleware/status.uk", datastat, (err) => {
                     if (err) console.log(err);
-                    console.log("Status is changed.");
+                    console.log("Processing.....");
                     watch('./Middleware/status.uk', {
                         recursive: true
                     }, function (evt, name) {
@@ -48,6 +50,7 @@ http.createServer(function (request, response) {
                                 response.setHeader("Access-Control-Allow-Origin", "*");
                                 sendjson=makejson();
                                 response.end(JSON.stringify(sendjson));
+                                console.log("Processed Successfully.");
                                 response = "";
                             }
                         }

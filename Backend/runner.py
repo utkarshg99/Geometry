@@ -18,7 +18,6 @@ cj=[]
 pj=[]
 
 commandlist={'clear stack':'reset point stack','status':'show all queued jobs','clear all':'reset application status','pop [_point(s)_]':'remove specified points from stack'}
-
 fly=open('./results/command.txt','a')
 mkd=open('./results/resuting.txt','a')
 lists=open('./results/lists.txt','a')

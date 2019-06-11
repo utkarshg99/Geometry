@@ -2562,3 +2562,19 @@ generate a circle of radius 50cm and center (500,400)
 
 join AB (200,250) and (500,400)
 
+make a regular hexagon of side length 50cm and centre (100,600)
+
+regular hexagon of side length 16 cm and centre as (0, 100)
+
+Fuck off
+
+
+
+line AB of length with endpoints as (100, 100) and (300, 400)
+
+make a line AB with end-points (100,100) and (500,600)
+
+suck my dick
+
+make a line of length 10 cm
+

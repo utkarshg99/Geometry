@@ -2,6 +2,7 @@ var num_of_imgs = 1;
 var loaded_imgs = 0;
 var color;
 var bgcolor;
+var scrht=700;
 var x, y, r, w, h, pts=[];
 var ins=[], len=0;
 var f=0;
@@ -193,7 +194,7 @@ function configure(){
     $(document).ready(function() {
         engine = new bHive({
             width: screen.width*0.989,
-            height: 700,
+            height: scrht,
             domobject: 'stageholder',
             backgroundColor: bgcolor
         });
