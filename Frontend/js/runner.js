@@ -18,6 +18,9 @@ function myLoop() {
 }
 
 function setgrdstat(x){
+    if(x){
+        drawBoard();
+    }
     grdstat=x;
 }
 

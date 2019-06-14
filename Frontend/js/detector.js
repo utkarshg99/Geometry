@@ -4,13 +4,22 @@ var l = 0;
 var stat = '';
 var snpstat = false;
 scrht = 640;
-var quesarr=[];
+var quesarr = [];
+var states = [];
+var idcntr = 0;
+var istatcntr = [];
+var rstatcntr = [];
 
 $(document).keyup(function (e) {
     if (e.key === "Escape") {
         setstat(stat);
     }
-    if (e.keyCode == 90 && e.ctrlKey) alert("Support To Be Added.");
+    if (e.keyCode == 90 && e.ctrlKey) {
+        removeLastDrawn();
+    }
+    if (e.keyCode == 89 && e.ctrlKey) {
+        showLastRemoved();
+    }
 });
 
 function displayer(event) {
@@ -28,17 +37,17 @@ function storecrd(event) {
         y: yval
     }
     if (snpstat) {
-        if(pt.x%8!=0){
-            var lx=parseInt(pt.x/8)*8;
-            var mx=lx+8;
-            var mid=lx+4;
-            pt.x=(pt.x<mid)?lx:mx;
+        if (pt.x % 8 != 0) {
+            var lx = parseInt(pt.x / 8) * 8;
+            var mx = lx + 8;
+            var mid = lx + 4;
+            pt.x = (pt.x < mid) ? lx : mx;
         }
-        if(pt.y%8!=0){
-            var ly=parseInt(pt.y/8)*8;
-            var my=ly+8;
-            var mid=ly+4;
-            pt.y=(pt.y<mid)?ly:my;
+        if (pt.y % 8 != 0) {
+            var ly = parseInt(pt.y / 8) * 8;
+            var my = ly + 8;
+            var mid = ly + 4;
+            pt.y = (pt.y < mid) ? ly : my;
         }
     }
     endpt.push(pt);
@@ -59,10 +68,49 @@ function setsnpstat() {
     snpstat = !snpstat;
 }
 
+function removeLastDrawn() {
+    if (istatcntr.length > 1) {
+        c = istatcntr.pop();
+        states[c - 1].visible = false;
+        engine.theLoop(detloop);
+        rstatcntr.push(c);
+        endpt = [];
+        l = 0;
+    }
+}
+
+function showLastRemoved() {
+    if (rstatcntr.length != 0) {
+        c = rstatcntr.pop();
+        states[c - 1].visible = true;
+        engine.theLoop(detloop);
+        istatcntr.push(c);
+        endpt = [];
+        l = 0;
+    }
+}
+
+function detloop() {
+    if (grdstat)
+        drawBoard();
+    for (var i = 0; i < states.length; i++) {
+        if (states[i].visible) {
+            states[i].instance.draw();
+        }
+    }
+}
+
 function process() {
+    var state = {};
     if (stat == 'line' && l > 1) {
         instance = strkpoly(color, endpt, 0, 0);
-        instance.draw();
+        state.instance = instance;
+        state.visible = true;
+        state.id = ++idcntr;
+        state.line = "";
+        states.push(state);
+        engine.theLoop(detloop);
+        istatcntr.push(state.id);
         temp = [];
         temp.push(endpt[1]);
         endpt = temp;
@@ -70,7 +118,13 @@ function process() {
     } else if (stat == 'circle' && l > 1) {
         var r = eucliddist(endpt[0], endpt[1]);
         instance = strkcircle(color, r, endpt[0].x - r, endpt[0].y - r);
-        instance.draw();
+        state.instance = instance;
+        state.visible = true;
+        state.id = ++idcntr;
+        state.type = "circle"
+        states.push(state);
+        engine.theLoop(detloop);
+        istatcntr.push(state.id);
         temp = [];
         temp.push(endpt[0]);
         endpt = temp;
