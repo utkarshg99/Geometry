@@ -8,16 +8,21 @@ function globalizer() {
     context = canvas.getContext("2d");
 }
 
-function drawBoard() {
-    globalizer();
-    for (var x = 0; x <= bw; x += 40) {
+function makegrd(g, col){
+    for (var x = 0; x <= bw; x += g) {
         context.moveTo(x, 0);
         context.lineTo(x, bh);
     }
-    for (var x = 0; x <= bh; x += 40) {
+    for (var x = 0; x <= bh; x += g) {
         context.moveTo(0, x);
         context.lineTo(bw, x);
     }
-    context.strokeStyle = "black";
+    context.strokeStyle = col;
     context.stroke();
+}
+
+function drawBoard() {
+    globalizer();
+    makegrd(8, "white");
+    makegrd(40, "black");
 }

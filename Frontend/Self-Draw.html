@@ -20,26 +20,25 @@
 
 <body>
     <div id="stageholder" onmousemove="displayer(event);" onclick="storecrd(event);process();"></div>
-    <div class="row">
-        <div class="col-md-6">
-            <button onclick="setstat('line')" style="float: right;" class="btn btn-success">Line</button>
-            <button onclick="setsnpstat()" style="float: left;" class="btn btn-warning">Snap to Fit</button>
-        </div>
-        <div style="text-align: left;" class="col-md-6">
-            <button onclick="setstat('circle')" class="btn btn-success" style="float: left;">Circle</button>
-            <button class="btn btn-warning" onclick="drawBoard();" style="float:right;">Make Grid</button>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6">
-            <div id="cords" style="text-align: center"></div>
-        </div>
-        <div style="text-align: left;" class="col-md-6">
-            <div id="snps" style="text-align: center"></div>
-        </div>
-    </div>
-    <div><br /></div>
     <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <button onclick="setstat('line')" style="float: right;" class="btn btn-success">Line</button>
+                <button onclick="setsnpstat()" style="float: left;" class="btn btn-warning">Snap to Fit</button>
+            </div>
+            <div style="text-align: left;" class="col-md-6">
+                <button onclick="setstat('circle')" class="btn btn-success" style="float: left;">Circle</button>
+                <button class="btn btn-warning" onclick="drawBoard();" style="float:right;">Make Grid</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div id="cords" style="text-align: center"></div>
+            </div>
+            <div style="text-align: left;" class="col-md-6">
+                <div id="snps" style="text-align: center"></div>
+            </div>
+        </div>
         <h3><b>Configure Appearance:</b></h3>
         <div class="row">
             <div class="form-group col-md-6">

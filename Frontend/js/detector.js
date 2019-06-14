@@ -4,12 +4,13 @@ var l = 0;
 var stat = '';
 var snpstat = false;
 scrht = 640;
-var quesarr=[];;
+var quesarr=[];
 
 $(document).keyup(function (e) {
     if (e.key === "Escape") {
         setstat(stat);
     }
+    if (e.keyCode == 90 && e.ctrlKey) alert("Support To Be Added.");
 });
 
 function displayer(event) {
@@ -27,16 +28,16 @@ function storecrd(event) {
         y: yval
     }
     if (snpstat) {
-        if(pt.x%40!=0){
-            var lx=parseInt(pt.x/40)*40;
-            var mx=lx+40;
-            var mid=lx+20;
+        if(pt.x%8!=0){
+            var lx=parseInt(pt.x/8)*8;
+            var mx=lx+8;
+            var mid=lx+4;
             pt.x=(pt.x<mid)?lx:mx;
         }
-        if(pt.y%40!=0){
-            var ly=parseInt(pt.y/40)*40;
-            var my=ly+40;
-            var mid=ly+20;
+        if(pt.y%8!=0){
+            var ly=parseInt(pt.y/8)*8;
+            var my=ly+8;
+            var mid=ly+4;
             pt.y=(pt.y<mid)?ly:my;
         }
     }

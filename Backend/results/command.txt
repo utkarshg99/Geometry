@@ -1,3 +1,57 @@
 
 sdfdsffsg
 
+make a circle of radius  40cm and centre (0,0)
+
+make a circle of radius 40cm and center (100, 100)
+
+make a circle of radius 100cm and radius (200,200)
+
+make a circle of radius 100cm and radius (200,200)
+
+make a line between (100,100) and (200,200)
+
+make a circle of radius 100cm and center (0,0)
+
+make a circle of radius 40cm and centre (0,0)
+
+make a circle of radius 40cm and centre (0,0)
+
+make a circle of radius 40cm and centre (100,100)
+
+make a circle of radius 40cm and centre (500,400)
+
+make a circle of radius 40cm and centre (600,350)
+
+make a circle of radius 40cm and center (0,0)
+
+make a circle of radius 40cm and center (0,0)
+
+make a circle of radius 40cm and center (0,0)
+
+make a circle of radius 40cm and center (100,100)
+
+make a line of length 40 cm
+
+make a line of length 40 cm 
+
+the line between the coordinates (100,100) and (200, 200)
+
+make a line of length 40 cm 
+
+the line between the coordinates (100,100) and (200, 200)
+
+the line between the coordinates (100,100) and (200, 200)
+
+make a line between the coordinates (100, 100) and (200, 200)
+
+join (100, 100) and (200, 200)
+
+the line between the coordinates (100,100) and (200, 200)
+
+the line between the coordinates A (100,100) and B (200, 200)
+
+make a circle of radius 100cm
+
+make a circle of radius 300cm
+
