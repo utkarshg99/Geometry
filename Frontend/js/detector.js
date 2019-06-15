@@ -9,9 +9,12 @@ var states = [];
 var idcntr = 0;
 var istatcntr = [];
 var rstatcntr = [];
-var circlecircle=[];
-var lineline=[];
-var linelinencr=[];
+var circlecircleint = [];
+var circlecircletouch = [];
+var lineline = [];
+var linelinencr = [];
+var linecircletouch = [];
+var linecircleint = [];
 
 $(document).keyup(function (e) {
     if (e.key === "Escape") {
@@ -190,30 +193,31 @@ function cmppt(pt1, pt2) {
 
 function getIntersectingLines(takecnr) {
     var num = 0;
-    var set={};
+    var set = {};
     if (takecnr) {
+        lineline = [];
         for (var i = 0; i < states.length; i++) {
             for (var j = i + 1; j < states.length; j++) {
                 if (states[i].type == 'line' && states[j].type == 'line' && states[i].visible && states[j].visible && doIntersect(states[i], states[j])) {
                     num++;
-                    set.i=i;
-                    set.j=j;
+                    set.i = i;
+                    set.j = j;
                     lineline.push(set);
                 }
             }
         }
         return num;
     } else {
+        linelinencr = [];
         for (var i = 0; i < states.length; i++) {
             for (var j = i + 1; j < states.length; j++) {
                 if (states[i].type == 'line' && states[j].type == 'line' && states[i].visible && states[j].visible && doIntersect(states[i], states[j])) {
                     num++;
-                    set.i=i;
-                    set.j=j;
+                    set.i = i;
+                    set.j = j;
                     linelinencr.push(set);
                     if (cmppt(states[i].endpts[0], states[j].endpts[0]) || cmppt(states[i].endpts[0], states[j].endpts[1]) || cmppt(states[i].endpts[1], states[j].endpts[0]) || cmppt(states[i].endpts[1], states[j].endpts[1]))
                         num--;
-                        lineline.pop();
                 }
             }
         }
@@ -222,15 +226,22 @@ function getIntersectingLines(takecnr) {
 }
 
 function getIntersectingCircles() {
+    circlecircleint = [];
+    circlecircletouch = [];
     var num = 0;
     for (var i = 0; i < states.length; i++) {
         for (var j = i + 1; j < states.length; j++) {
             if (states[i].type == 'circle' && states[j].type == 'circle' && states[i].visible && states[j].visible) {
-                if (eucliddist(states[i].cen, states[j].cen) < (states[i].r + states[j].r) && eucliddist(states[i].cen, states[j].cen) > Math.abs(states[i].r - states[j].r)){
+                if (eucliddist(states[i].cen, states[j].cen) < (states[i].r + states[j].r) && eucliddist(states[i].cen, states[j].cen) > Math.abs(states[i].r - states[j].r)) {
                     num++;
-                    set.i=i;
-                    set.j=j;
-                    circlecircle.push(set);
+                    set.i = i;
+                    set.j = j;
+                    circlecircleint.push(set);
+                } else if (Math.abs(eucliddist(states[i].cen, states[j].cen) - (states[i].r + states[j].r)) < 1 || Math.abs(eucliddist(states[i].cen, states[j].cen) - Math.abs(states[i].r - states[j].r)) < 1) {
+                    num++;
+                    set.i = i;
+                    set.j = j;
+                    circlecircletouch.push(set);
                 }
             }
         }
@@ -238,6 +249,40 @@ function getIntersectingCircles() {
     return num;
 }
 
-function getInterctingLineAndCircles(){
-
+function getIntersectingLineAndCircles() {
+    linecircleint = [];
+    linecircletouch = [];
+    var num = 0;
+    for (var i = 0; i < states.length; i++) {
+        for (var j = 0; j < states.length; j++) {
+            if (states[j].visible && states[i].visible && states[i].type == 'circle' && states[j].type == 'line') {
+                var d = {}
+                d.x = states[j].endpts[0].x - states[j].endpts[1].x;
+                d.y = states[j].endpts[0].y - states[j].endpts[1].y;
+                var f = {};
+                f.x = states[j].endpts[1].x - states[i].cen.x;
+                f.y = states[j].endpts[1].y - states[i].cen.y;
+                var dxd=d.x*d.x+d.y*d.y;
+                var fxf=f.x*f.x+f.y*f.y;
+                var fxd=f.x*d.x+f.y*d.y;
+                var a=dxd, b=2*fxd, c=fxf-(states[i].r)*(states[i].r);
+                var disc=b*b-4*a*c;
+                if(disc<1){
+                    var set={};
+                    set.line=j;
+                    set.circle=i;
+                    linecircletouch.push(set);
+                    num++;
+                }
+                else if(disc>0){
+                    var set={};
+                    set.line=j;
+                    set.circle=i;
+                    linecircleint.push(set);
+                    num++;
+                }
+            }
+        }
+    }
+    return num;
 }
