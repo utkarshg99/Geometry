@@ -108,3 +108,17 @@ http.createServer(function (request, response) {
     console.log("Processed Successfully.");
     response = "";
 }).listen(qportNumber);
+/*
+var resqportNumber = 5050;
+console.log("Waiting for Question Requests at " + resqportNumber + " .....");
+http.createServer(function (request, response) {
+    data=[];
+    request.on('data', chunk => {
+        console.log("here it is :"+chunk);
+        data.push(chunk);
+    })
+    request.on('end', () => {
+        console.log(JSON.parse(data));
+    })
+}).listen(resqportNumber);
+*/
