@@ -34,3 +34,35 @@
 ![alt text](https://firebasestorage.googleapis.com/v0/b/utkarshgx.appspot.com/o/images%2FGeometry.jpg?alt=media&token=6f660d61-6b06-4daf-865d-c3e624d034bd)
 
 ### To RUN : Execute geometry.exe on windows. Alternatively, use "python starter.py"
+
+### Uploading Questions using UK-Lang:
+
+#### Sample Script:
+Remove Single Quotes
+"""
+'>>>>Question 1'
+'##40'
+$circle
+*radius:40
+*center:(100,100)
+$tangent
+*length:50
+$chord
+*length:60
+*thesh:10
+@end
+'>>>>Question 2'
+!desc: Single Line Descriptions
+'##60'
+$circle
+*radius:40
+*center:(100,100)
+$tangent
+*length:50
+$chord
+*length:60
+*thesh:10
+@end
+%done%
+
+"""

@@ -43,6 +43,3 @@ def decide(strn):
     if(n==2):
         return('line', '')
     return ('undealt', '')
-
-# strn='draw a line AB'
-# print(decide(strn))

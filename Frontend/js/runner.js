@@ -199,11 +199,3 @@ function configure() {
         setTimeout("checkforload()", 1000);
     });
 }
-
-// function transform(){
-//     var canvas = document.getElementById("stageholder").children[0];
-//     var context = canvas.getContext("2d");
-//     var transX = canvas.width * 0.5,
-//         transY = canvas.height * 0.5;
-//     context.translate(transX, transY);
-// }

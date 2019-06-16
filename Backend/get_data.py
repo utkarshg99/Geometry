@@ -231,11 +231,3 @@ def make_rect(strn, sub, dicti={}):
     ptlst.append(tr)
     ptlst.append(br)
     return (ptlst, dicti) 
-
-# strn = "draw a circle of radius length 30cm"
-# strn="draw a circle with centre C having coords (70, 67) with dia=40cm"
-# strn = "draw a line conecting points A with co-ordinates (90,90) and (30,50) of length 230 cm"
-# strn="draw a line AB of length 10 cm"
-# strn="draw a polygon ABCD with (10,20) (90,80) (30,40) (50,60)"
-# dicti=getdict(strn, {})
-# print(make_poly(strn, dicti))

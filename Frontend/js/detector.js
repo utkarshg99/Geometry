@@ -262,27 +262,104 @@ function getIntersectingLineAndCircles() {
                 var f = {};
                 f.x = states[j].endpts[1].x - states[i].cen.x;
                 f.y = states[j].endpts[1].y - states[i].cen.y;
-                var dxd=d.x*d.x+d.y*d.y;
-                var fxf=f.x*f.x+f.y*f.y;
-                var fxd=f.x*d.x+f.y*d.y;
-                var a=dxd, b=2*fxd, c=fxf-(states[i].r)*(states[i].r);
-                var disc=b*b-4*a*c;
-                if(disc<1){
-                    var set={};
-                    set.line=j;
-                    set.circle=i;
+                var dxd = d.x * d.x + d.y * d.y;
+                var fxf = f.x * f.x + f.y * f.y;
+                var fxd = f.x * d.x + f.y * d.y;
+                var a = dxd,
+                    b = 2 * fxd,
+                    c = fxf - (states[i].r) * (states[i].r);
+                var disc = b * b - 4 * a * c;
+                if (Math.abs(disc) < 1) {
+                    var set = {};
+                    set.line = j;
+                    set.circle = i;
                     linecircletouch.push(set);
                     num++;
-                }
-                else if(disc>0){
-                    var set={};
-                    set.line=j;
-                    set.circle=i;
-                    linecircleint.push(set);
-                    num++;
+                } else if (disc > 0) {
+                    var t1 = (-b - Math.sqrt(disc)) / (2 * a);
+                    var t2 = (-b + Math.sqrt(disc)) / (2 * a);
+                    if (t1 >= 0 && t1 <= 1) {
+                        var set = {};
+                        set.line = j;
+                        set.circle = i;
+                        linecircleint.push(set);
+                        num++;
+                    } else if (t2 >= 0 && t2 <= 1) {
+                        var set = {};
+                        set.line = j;
+                        set.circle = i;
+                        linecircleint.push(set);
+                        num++;
+                    }
                 }
             }
         }
     }
     return num;
+}
+
+function getRelations() {
+    var ic = getIntersectingCircles();
+    var ilc = getIntersectingLineAndCircles();
+    var il = getIntersectingLines(true);
+}
+
+function dispquestion() {
+    for (var i = 0; i < quesarr.length; i++) {
+        document.getElementById('quesarea').innerHTML = document.getElementById('quesarea').innerHTML + "<h4>" + quesarr[i].title + "</h4>" + "<h5>Marks : " + quesarr[i].score + "</h5>" + quesarr[i].desc + '<br/>' + '<div id="st' + i + '">Unsolved</div><br/><br/>';
+    }
+}
+
+function checkCircle(nj) {
+    var cen = nj.cen;
+    var r = nj.radius;
+    var rcheck = true,
+        cencheck = true;
+    var resr = false,
+        rescen = false;
+    if (r == '') {
+        rcheck = false;
+        resr = true;
+    }
+    if (cen == '') {
+        rescen = false;
+        cencheck = true;
+    }
+    for (var i = 0; i < states.length; i++) {
+        if (states[i].type == 'circle' && states[i].visible) {
+            if (rcheck && Math.abs(r - states[i].r) < nj.thresh) {
+                resr = true;
+            }
+            if (cencheck && cen[0] == states[i].cen[0] && cen[1] == states[i].cen[1]) {
+                rescen = true;
+            }
+            if (rescen && resr) {
+                nj.status = true;
+                return nj;
+            }
+            if (rcheck)
+                resr = false;
+            if (cencheck)
+                rescen = false;
+        }
+    }
+    return nj;
+}
+
+function verify() {
+    for (var i = 0; i < quesarr.length; i++) {
+        var ques = quesarr[i].data;
+        for (var j = 0; j < ques.length; j++) {
+            var nj = ques[j];
+            if (nj.type == 'circle') {
+                nj = checkCircle(nj);
+            } else if (nj.type == 'tangent') {
+                nj = checkTangent(nj);
+            } else if (nj.type == 'chord') {
+                nj = checkChord(nj);
+            } else if (nj.type == 'line') {
+                nj = checkLine(nj);
+            }
+        }
+    }
 }

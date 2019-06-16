@@ -20,11 +20,11 @@ function makejson() {
     return js;
 }
 
-function qjson() {
-    js = {};
-    q = fs.readFileSync('./Middleware/questions.uk', 'utf8');
-    js.q = q;
-    return js;
+function qmakejson() {
+    js = JSON.parse(fs.readFileSync('./Middleware/questions.json', 'utf8'));
+    jsx = {};
+    jsx.data = js;
+    return jsx;
 }
 
 console.log("Server Launched.");
@@ -43,7 +43,7 @@ http.createServer(function (request, response) {
             datastat = "Wait";
             fs.writeFile("./Middleware/commands.uk", post, (err) => {
                 if (err) console.log(err);
-                console.log("\n" + post + "\n");
+                // console.log("\n" + post + "\n");
                 console.log("Commands were Recorded.");
                 fs.writeFile("./Middleware/status.uk", datastat, (err) => {
                     if (err) console.log(err);
@@ -82,16 +82,32 @@ http.createServer(function (request, response) {
         request.on('end', function () {
             var post = qs.parse(body);
             post = post.commands;
-            fs.writeFile("./Middleware/questions.uk", post, (err) => {
+            datastat = "Wait";
+            fs.writeFile("./Middleware/rawques.uk", post, (err) => {
                 if (err) console.log(err);
-                console.log("\n" + post + "\n");
+                // console.log("\n" + post + "\n");
                 console.log("Questions were Recorded.");
-                response.setHeader('Content-Type', 'application/json');
-                response.setHeader("Access-Control-Allow-Origin", "*");
-                sendjson = {
-                    'value': "Questions were Recorded."
-                }
-                response.end(JSON.stringify(sendjson));
+                fs.writeFile("./Middleware/qstatus.uk", datastat, (err) => {
+                    if (err) console.log(err);
+                    console.log("Processing.....");
+                    watch('./Middleware/qstatus.uk', {
+                        recursive: true
+                    }, function (evt, name) {
+                        if (evt == 'update') {
+                            datax = fs.readFileSync("./Middleware/qstatus.uk", 'utf8');
+                            if (datax == "Go" && response != "") {
+                                response.setHeader('Content-Type', 'application/json');
+                                response.setHeader("Access-Control-Allow-Origin", "*");
+                                sendjson = {
+                                    "status": "Processed Succesfully"
+                                };
+                                response.end(JSON.stringify(sendjson));
+                                console.log("Processed Successfully.");
+                                response = "";
+                            }
+                        }
+                    });
+                });
             });
         });
     }
@@ -103,22 +119,8 @@ http.createServer(function (request, response) {
     console.log("Incoming Connection.");
     response.setHeader('Content-Type', 'application/json');
     response.setHeader("Access-Control-Allow-Origin", "*");
-    sendjson = qjson();
+    sendjson = qmakejson();
     response.end(JSON.stringify(sendjson));
     console.log("Processed Successfully.");
     response = "";
 }).listen(qportNumber);
-/*
-var resqportNumber = 5050;
-console.log("Waiting for Question Requests at " + resqportNumber + " .....");
-http.createServer(function (request, response) {
-    data=[];
-    request.on('data', chunk => {
-        console.log("here it is :"+chunk);
-        data.push(chunk);
-    })
-    request.on('end', () => {
-        console.log(JSON.parse(data));
-    })
-}).listen(resqportNumber);
-*/

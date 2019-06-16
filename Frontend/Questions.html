@@ -20,23 +20,21 @@
 <body>
     <div id="stageholder"></div>
     <div><br /></div>
-    <div class="container-fluid">
+    <div class="container-fluid" style="text-align: center">
+        <div><br /></div>
+        <button onclick="goq(7070);" class="btn btn-success">Start Uploading</button>
         <div><br /></div>
         <h4>Upload Questions to Server:</h4>
         <div class="row">
             <div class="col-md-12 form-group"><br />
-                <textarea name="commands" style="width:100%;height: 500px;" id="commands"
+                <textarea name="commands" style="width:100%;height: 1000px;" id="commands"
                     placeholder="Enter your questions here."></textarea>
+
+                <br />
+                <h5 style="text-align: center">Drag To Expand Command Area</h5>
+                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             </div>
         </div>
-        <div style="text-align: center">
-            <button id="start-record-btn" class="btn btn-default">Start Recognition</button><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-            <button id="pause-record-btn" class="btn btn-default">Pause Recognition</button>
-            <br/><br/>
-            <p id="arei">Press the <strong>Start Recognition</strong> button and allow access.</p>
-        </div>
-        <button onclick="goq(7070);" class="btn btn-success">Start Uploading</button>
-        <div><br /></div>
         <script src="./js/speechtotext.js"></script>
     </div>
 </body>

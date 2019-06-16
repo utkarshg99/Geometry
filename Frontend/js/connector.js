@@ -32,8 +32,8 @@ function getques(port) {
     xhr.onreadystatechange = function () {
         if (xhr.readyState == 4 && xhr.status == 200) {
             js=JSON.parse(xhr.responseText);
-            document.getElementById("quesarea").innerText=js.q;
-            quesarr=js.q;
+            quesarr=js.data;
+            dispquestion();
         }
     };
     xhr.send(req);
