@@ -66,6 +66,8 @@ def beginUnderstanding(question, datln):
                         keys=xset.keys()
                         if('radius' not in keys):
                             xset['radius']=''
+                        if('center' not in keys):
+                            xset['center']=''
                         if('thresh' not in keys):
                             xset['thresh']=0
                         if('length' not in keys):
@@ -79,6 +81,12 @@ def beginUnderstanding(question, datln):
                         xset['thresh']=int(stmnt[7:])
                     elif(stmnt.startswith('length')):
                         xset['length']=int(stmnt[7:])
+                    elif(stmnt.startswith('center')):
+                        stmnt='A'+stmnt
+                        xs=getdict(stmnt, {})['A']
+                        xset['center']=[]
+                        xset['center'].append(round(xs[0]))
+                        xset['center'].append(round(xs[1]))
                 elif(xset['type']=='chord'):
                     i+=1
                     stmnt=datln[i]
@@ -90,11 +98,35 @@ def beginUnderstanding(question, datln):
                             xset['thresh']=0
                         if('length' not in keys):
                             xset['length']=''
+                        if('center' not in keys):
+                            xset['center']=''
                         question['data'].append(xset)
                         break
                     stmnt=stmnt[1:]
                     if(stmnt.startswith('radius')):
                         xset['radius']=int(stmnt[7:])
+                    if(stmnt.startswith('thresh')):
+                        xset['thresh']=int(stmnt[7:])
+                    elif(stmnt.startswith('length')):
+                        xset['length']=int(stmnt[7:])
+                    elif(stmnt.startswith('center')):
+                        stmnt='A'+stmnt
+                        xs=getdict(stmnt, {})['A']
+                        xset['center']=[]
+                        xset['center'].append(round(xs[0]))
+                        xset['center'].append(round(xs[1]))
+                elif(xset['type']=='line'):
+                    i+=1
+                    stmnt=datln[i]
+                    if(stmnt.startswith('$') or stmnt.startswith('@')):
+                        keys=xset.keys()
+                        if('length' not in keys):
+                            xset['length']=''
+                        if('thresh' not in keys):
+                            xset['thresh']=0
+                        question['data'].append(xset)
+                        break
+                    stmnt=stmnt[1:]
                     if(stmnt.startswith('thresh')):
                         xset['thresh']=int(stmnt[7:])
                     elif(stmnt.startswith('length')):

@@ -1,24 +1,15 @@
 >>>>Question 1
-##40
+!desc:This is question 1
+##80
+$tangent
+*radius:80
+*thresh:20
+*length:80
+*center:(100,100)
 $circle
 *radius:40
+*thresh:20
+*length:80
 *center:(100,100)
-$tangent
-*length:50
-$chord
-*length:60
-*thesh:10
-@end
->>>>Question 2
-!desc: Single Line Descriptions
-##60
-$circle
-*radius:40
-*center:(100,100)
-$tangent
-*length:50
-$chord
-*length:60
-*thesh:10
 @end
 %done%

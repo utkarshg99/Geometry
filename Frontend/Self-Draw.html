@@ -21,6 +21,7 @@
 <body>
     <div id="stageholder" onmousemove="displayer(event);" onclick="storecrd(event);process();"></div>
     <div class="container-fluid">
+        <div id="hideMe"><br/></div>
         <div class="row">
             <div class="col-md-6">
                 <button onclick="setstat('line')" style="float: right;" class="btn btn-success">Line</button>
@@ -54,7 +55,7 @@
         </div>
         <div class="row">
             <div class="col-md-6">
-                <button class="btn btn-primary" onclick="configure();" autofocus>Set Parameters</button>
+                <button class="btn btn-primary" onclick="configure();hideBreak();" autofocus>Set Parameters</button>
             </div>
             <div class="col-md-6">
                 <button class="btn btn-primary" onclick="getques(6060);" autofocus>Get Questions</button>

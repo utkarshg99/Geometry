@@ -15,6 +15,7 @@ var lineline = [];
 var linelinencr = [];
 var linecircletouch = [];
 var linecircleint = [];
+var globalThreshold = 8;
 
 $(document).keyup(function (e) {
     if (e.key === "Escape") {
@@ -25,6 +26,10 @@ $(document).keyup(function (e) {
         showLastRemoved();
     }
 });
+
+function hideBreak(){
+    document.getElementById('hideMe').style.display="none";
+}
 
 function displayer(event) {
     xval = event.clientX;
@@ -229,6 +234,7 @@ function getIntersectingCircles() {
     circlecircleint = [];
     circlecircletouch = [];
     var num = 0;
+    var set={};
     for (var i = 0; i < states.length; i++) {
         for (var j = i + 1; j < states.length; j++) {
             if (states[i].type == 'circle' && states[j].type == 'circle' && states[i].visible && states[j].visible) {
@@ -271,7 +277,7 @@ function getIntersectingLineAndCircles() {
                 var disc = b * b - 4 * a * c;
                 if (Math.abs(disc) < 1) {
                     var set = {};
-                    set.line = j;
+                    set.line = j; //j and i are actual state-ids
                     set.circle = i;
                     linecircletouch.push(set);
                     num++;
@@ -311,7 +317,7 @@ function dispquestion() {
 }
 
 function checkCircle(nj) {
-    var cen = nj.cen;
+    var cen = nj.center;
     var r = nj.radius;
     var rcheck = true,
         cencheck = true;
@@ -322,15 +328,15 @@ function checkCircle(nj) {
         resr = true;
     }
     if (cen == '') {
-        rescen = false;
-        cencheck = true;
+        cencheck = false;
+        rescen = true;
     }
     for (var i = 0; i < states.length; i++) {
         if (states[i].type == 'circle' && states[i].visible) {
-            if (rcheck && Math.abs(r - states[i].r) < nj.thresh) {
+            if (rcheck && Math.abs(r - states[i].r) <= nj.thresh) {
                 resr = true;
             }
-            if (cencheck && cen[0] == states[i].cen[0] && cen[1] == states[i].cen[1]) {
+            if (cencheck && Math.abs(cen[0] - states[i].cen.x) <= globalThreshold && Math.abs(cen[1] - states[i].cen.y) <= globalThreshold) {
                 rescen = true;
             }
             if (rescen && resr) {
@@ -343,10 +349,135 @@ function checkCircle(nj) {
                 rescen = false;
         }
     }
+    nj.status=false;
+    return nj;
+}
+
+function checkLine(nj) {
+    var leng = nj.length;
+    var lcheck = true;
+    var resl = false;
+    if (leng == '') {
+        lcheck = false;
+        resl = true;
+    }
+    for (var i = 0; i < states.length; i++) {
+        if (states[i].type == 'line' && states[i].visible) {
+            if (lcheck && Math.abs(leng - states[i].len) <= nj.thresh) {
+                resl = true;
+            }
+            if (resl) {
+                nj.status = true;
+                return nj;
+            }
+            if (lcheck)
+                resl = false;
+        }
+    }
+    nj.status=false;
+    return nj;
+}
+
+function checkTangent(nj) {
+    var leng = nj.length;
+    var r = nj.radius;
+    var cen = nj.center;
+    var lcheck = true;
+    var rcheck = true;
+    var cencheck = true;
+    var resl = false;
+    var resr = false;
+    var rescen = false;
+    if (leng == '') {
+        lcheck = false;
+        resl = true;
+    }
+    if (cen == '') {
+        cencheck = false;
+        rescen = true;
+    }
+    if (r == '') {
+        rcheck = false;
+        resr = true;
+    }
+    for (var i = 0; i < linecircletouch.length; i++) {
+        circle = states[linecircletouch[i].circle];
+        line = states[linecircletouch[i].line];
+        if (cencheck && Math.abs(cen[0] - circle.cen.x) <= globalThreshold && Math.abs(cen[1] - circle.cen.y) <= globalThreshold) {
+            rescen = true;
+        }
+        if (rcheck && Math.abs(r - circle.r) <= nj.thresh) {
+            resr = true;
+        }
+        if (lcheck && Math.abs(leng - line.len) <= nj.thresh) {
+            resl = true;
+        }
+        if (rescen && resl && resr) {
+            nj.status = true;
+            return nj;
+        }
+        if (rcheck)
+            resr = false;
+        if (cencheck)
+            rescen = false;
+        if (lcheck)
+            resl = false;
+    }
+    nj.status=false;
+    return nj;
+}
+
+function checkChord(nj) {
+    var leng = nj.length;
+    var r = nj.radius;
+    var cen = nj.center;
+    var lcheck = true;
+    var rcheck = true;
+    var cencheck = true;
+    var resl = false;
+    var resr = false;
+    var rescen = false;
+    if (leng == '') {
+        lcheck = false;
+        resl = true;
+    }
+    if (cen == '') {
+        cencheck = false;
+        rescen = true;
+    }
+    if (r == '') {
+        rcheck = false;
+        resr = true;
+    }
+    for (var i = 0; i < linecircleint.length; i++) {
+        circle = states[linecircleint[i].circle];
+        line = states[linecircleint[i].line];
+        if (cencheck && Math.abs(cen[0] - circle.cen.x) <= globalThreshold && Math.abs(cen[1] - circle.cen.y) <= globalThreshold) {
+            rescen = true;
+        }
+        if (rcheck && Math.abs(r - circle.r) <= nj.thresh) {
+            resr = true;
+        }
+        if (lcheck && Math.abs(leng - line.len) <= nj.thresh) {
+            resl = true;
+        }
+        if (rescen && resl && resr) {
+            nj.status = true;
+            return nj;
+        }
+        if (rcheck)
+            resr = false;
+        if (cencheck)
+            rescen = false;
+        if (lcheck)
+            resl = false;
+    }
+    nj.status=false;
     return nj;
 }
 
 function verify() {
+    getRelations();
     for (var i = 0; i < quesarr.length; i++) {
         var ques = quesarr[i].data;
         for (var j = 0; j < ques.length; j++) {
@@ -362,4 +493,25 @@ function verify() {
             }
         }
     }
+    updateAll();
 }
+
+function updateAll(){
+    var netscr=0;
+    for (var i = 0; i < quesarr.length; i++) {
+        var ques = quesarr[i].data;
+        var b=0;
+        for(var j=0; j < ques.length; j++){
+            var nj=ques[j];
+            if(nj.status)
+                b++;
+        }
+        document.getElementById('st'+i).innerText='Solved : '+parseInt(b/ques.length*100)+"%";
+        if(b==ques.length){
+            netscr+=parseInt(quesarr[i].score);
+        }
+    }
+    document.getElementById('score').innerText=netscr;
+}
+
+setInterval(verify, 3000);
