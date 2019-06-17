@@ -2,7 +2,7 @@
 ##40
 !desc: Yeah, A Description Here.
 $dicti
-#A (100,100) B (20,40) C (500,600) D (400,300) E (20,70)
+#A (100,100) B (20,40) C (500,600) D (400,300) E (20,70) X (200,200)
 $circle
 *radius:40
 *center:A
@@ -14,6 +14,11 @@ $chord
 $line
 *thresh:20
 *name:DA
+$poly
+*name:ADCB
+$stat
+*trans:X
+*stat:make a square of side-length 100cm
 @end
 >>>>Question 2
 !desc: Single Line Descriptions.

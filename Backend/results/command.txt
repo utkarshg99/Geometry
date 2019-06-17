@@ -55,3 +55,53 @@ make a circle of radius 100cm
 
 make a circle of radius 300cm
 
+make a line AB (80,80) and (160,160)
+
+make a square of side-length 40cm
+
+let AB be (100,100) and (400,300)
+
+draw a line AB
+
+let AB be (100,100) and (400,300)
+
+draw a line AB
+
+let AB be (100,100) and (400,300)
+
+line: AB
+
+AB as (90,80) and (45,50)
+
+stat:draw a line AB
+
+AB as (90,80) and (45,50)
+
+stat:draw a line AB
+
+AB as (90,80) and (45,50)
+
+make ABCDEF (100,100) (200,200) (300,400) (190,160) (430,560) (640,720)
+
+ABCDEF (100,100) (200,200) (300,400) (190,160) (430,560) (640,720)
+
+ABCDEF (100,100) (200,200) (300,400) (190,160) (430,560) (640,720)
+
+make a regular hexagon ABCDEF of side-length 160cm
+
+make a regular hexagon of side-length 160cm
+
+make a regular hexagon of side-length 10cm
+
+make a regular hexagon of side-length 10cm (100,100)
+
+make a regular hexagon of side-length 50cm (100,100)
+
+make a regular hexagon ABCDEF of side-length 50cm (100,100)
+
+make a regular hexagon ABCDEF of side-length 50cm (100,100)
+
+make a regular hexagon ABCDEF of side-length 50cm (100,100)
+
+draw a line JA (20,40)
+

@@ -39,13 +39,23 @@
 
 #### Currently Supports :
 
-* Dictionary of Points : a statement with point-names in capitals and cordinates in form (x, y), dictionary is local to a particular question
-* Circle : center (center:), radius (radius:), threshold (thresh:), diameter (diamet:)
-* Line : threshold (thresh:), length (length:), end-points (name:)
-* Tangent : center (center:), radius (radius:), threshold (thresh:), length (length:), intersection (int:)
-* Chord : center (center:), radius (radius:), threshold (thresh:), length (length:), intersection (int:)
+* Dictionary of Points  : ($dict)       : a statement with point-names in capitals and cordinates in form (x, y), dictionary is local to a particular question (#)
+* Tangent               : ($tangent)    : center (center:),     radius (radius:), threshold (thresh:), length (length:), intersection (int:)
+* Chord                 : ($chord)      : center (center:),     radius (radius:), threshold (thresh:), length (length:), intersection (int:)
+* Circle                : ($circle)     : center (center:),     radius (radius:), threshold (thresh:), diameter (diamet:)
+* Line                  : ($line)       : threshold (thresh:),  length (length:), end-points (name:)
+* Statatement           : ($stat)       : stat (stat:),         trans (trans:)
+* Polygon               : ($poly)       : vertices (name:)
 
-PS: (name:),(center:),(int:) fields have names of points mentioned already in dictionary.
+##### Guide to Commands:
+
+* (name:),(center:),(int:),(name:) fields have names of points mentioned already in dictionary.
+
+* (trans:) refers to a particular co-ordinate (specified after (trans:)) to which all other co-ordinates are to be translated to. Use this whenever (stat:) has polygons or lines with undefined co-ordinates. REMEMBER all co-ordinates are auto-shifted and not just those which are undefined.
+
+* (stat:) takes only one-line for processing, use multiple (stat:) for multiple lines, to get an idea of how (stat:) works use Auto-Draw. NOTE: Intteligent-Dictionary-Generation feature of Auto-Draw is partially turned off. Specify the points yourself beforehand in the dictionary, in case you are using them in the statments. However, for regular polygons if a name is given then, Dictionary is auto-updated.
+
+* (center:) and (radius:) for tangent and chords refers to the tangent of the circle to which they belong.
 
 #### Sample Script:
 ```
@@ -53,7 +63,7 @@ PS: (name:),(center:),(int:) fields have names of points mentioned already in di
 ##40
 !desc: Yeah, A Description Here.
 $dicti
-#A (100,100) B (20,40) C (500,600) D (400,300) E (20,70)
+#A (100,100) B (20,40) C (500,600) D (400,300) E (20,70) X (200,200)
 $circle
 *radius:40
 *center:A
@@ -65,6 +75,11 @@ $chord
 $line
 *thresh:20
 *name:DA
+$poly
+*name:ADCB
+$stat
+*trans:X
+*stat:make a square of side-length 100cm
 @end
 >>>>Question 2
 !desc: Single Line Descriptions.
@@ -82,5 +97,3 @@ $chord
 @end
 &done&
 ```
-
-TO ADD : polygons, regular polygons and general statements.

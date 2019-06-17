@@ -101,7 +101,6 @@ function showLastRemoved() {
 }
 
 function detloop() {
-    verify();
     if (grdstat)
         drawBoard();
     for (var i = 0; i < states.length; i++) {
