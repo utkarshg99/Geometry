@@ -13,9 +13,18 @@ def eu_dist(ptA, ptB):
     d=math.sqrt((ptA[0]-ptB[0])**2+(ptA[1]-ptB[1])**2)
     return d
 
+def ptlistdicti(string, dicti={}):
+    lst=[]
+    keyset=dicti.keys()
+    for i in string:
+        if (i in keyset):
+            lst.append(dicti[i])
+    return lst
+
 def beginUnderstanding(question, datln):
     i=0
     question['data']=[]
+    globdict={}
     while i < len(datln):
         stmnt=datln[i]
         if(stmnt.startswith('@')):
@@ -43,7 +52,7 @@ def beginUnderstanding(question, datln):
                         if('center' not in keys):
                             xset['center']=''
                         if('thresh' not in keys):
-                            xset['thresh']=0
+                            xset['thresh']=4
                         question['data'].append(xset)
                         break
                     stmnt=stmnt[1:]
@@ -54,11 +63,10 @@ def beginUnderstanding(question, datln):
                     elif(stmnt.startswith('thresh')):
                         xset['thresh']=int(stmnt[7:])
                     elif(stmnt.startswith('center')):
-                        stmnt='A'+stmnt
-                        xs=getdict(stmnt, {})['A']
+                        lst=ptlistdicti(stmnt, globdict)
                         xset['center']=[]
-                        xset['center'].append(round(xs[0]))
-                        xset['center'].append(round(xs[1]))
+                        xset['center'].append(round(lst[0][0]))
+                        xset['center'].append(round(lst[0][1]))
                 elif(xset['type']=='tangent'):
                     i+=1
                     stmnt=datln[i]
@@ -68,8 +76,10 @@ def beginUnderstanding(question, datln):
                             xset['radius']=''
                         if('center' not in keys):
                             xset['center']=''
+                        if('int' not in keys):
+                            xset['int']=''
                         if('thresh' not in keys):
-                            xset['thresh']=0
+                            xset['thresh']=4
                         if('length' not in keys):
                             xset['length']=''
                         question['data'].append(xset)
@@ -82,11 +92,15 @@ def beginUnderstanding(question, datln):
                     elif(stmnt.startswith('length')):
                         xset['length']=int(stmnt[7:])
                     elif(stmnt.startswith('center')):
-                        stmnt='A'+stmnt
-                        xs=getdict(stmnt, {})['A']
+                        lst=ptlistdicti(stmnt, globdict)
                         xset['center']=[]
-                        xset['center'].append(round(xs[0]))
-                        xset['center'].append(round(xs[1]))
+                        xset['center'].append(round(lst[0][0]))
+                        xset['center'].append(round(lst[0][1]))
+                    elif(stmnt.startswith('int')):
+                        lst=ptlistdicti(stmnt, globdict)
+                        xset['int']=[]
+                        xset['int'].append(round(lst[0][0]))
+                        xset['int'].append(round(lst[0][1]))
                 elif(xset['type']=='chord'):
                     i+=1
                     stmnt=datln[i]
@@ -95,11 +109,15 @@ def beginUnderstanding(question, datln):
                         if('radius' not in keys):
                             xset['radius']=''
                         if('thresh' not in keys):
-                            xset['thresh']=0
+                            xset['thresh']=4
                         if('length' not in keys):
                             xset['length']=''
                         if('center' not in keys):
                             xset['center']=''
+                        if('ptA' not in keys):
+                            xset['ptA']=''
+                        if('ptB' not in keys):
+                            xset['ptB']=''
                         question['data'].append(xset)
                         break
                     stmnt=stmnt[1:]
@@ -110,11 +128,27 @@ def beginUnderstanding(question, datln):
                     elif(stmnt.startswith('length')):
                         xset['length']=int(stmnt[7:])
                     elif(stmnt.startswith('center')):
-                        stmnt='A'+stmnt
-                        xs=getdict(stmnt, {})['A']
+                        lst=ptlistdicti(stmnt, globdict)
                         xset['center']=[]
-                        xset['center'].append(round(xs[0]))
-                        xset['center'].append(round(xs[1]))
+                        xset['center'].append(round(lst[0][0]))
+                        xset['center'].append(round(lst[0][1]))
+                    elif(stmnt.startswith('int')):
+                        lst=ptlistdicti(stmnt, globdict)
+                        xset['ptA']=[]
+                        xset['ptA'].append(round(lst[0][0]))
+                        xset['ptA'].append(round(lst[0][1]))
+                        xset['ptB']=[]
+                        xset['ptB'].append(round(lst[1][0]))
+                        xset['ptB'].append(round(lst[1][1]))
+                        if(xset['ptA'][0]>xset['ptB'][0]):
+                            t=xset['ptA']
+                            xset['ptA']=xset['ptB']
+                            xset['ptB']=t
+                        elif(xset['ptA'][0]==xset['ptB'][0]):
+                            if(xset['ptA'][1]>xset['ptB'][1]):
+                                t=xset['ptA']
+                                xset['ptA']=xset['ptB']
+                                xset['ptB']=t
                 elif(xset['type']=='line'):
                     i+=1
                     stmnt=datln[i]
@@ -122,8 +156,12 @@ def beginUnderstanding(question, datln):
                         keys=xset.keys()
                         if('length' not in keys):
                             xset['length']=''
+                        if('ptA' not in keys):
+                            xset['ptA']=''
+                        if('ptB' not in keys):
+                            xset['ptB']=''
                         if('thresh' not in keys):
-                            xset['thresh']=0
+                            xset['thresh']=4
                         question['data'].append(xset)
                         break
                     stmnt=stmnt[1:]
@@ -131,3 +169,32 @@ def beginUnderstanding(question, datln):
                         xset['thresh']=int(stmnt[7:])
                     elif(stmnt.startswith('length')):
                         xset['length']=int(stmnt[7:])
+                    elif(stmnt.startswith('name')):
+                        lst=ptlistdicti(stmnt, globdict)
+                        xset['ptA']=[]
+                        xset['ptA'].append(round(lst[0][0]))
+                        xset['ptA'].append(round(lst[0][1]))
+                        xset['ptB']=[]
+                        xset['ptB'].append(round(lst[1][0]))
+                        xset['ptB'].append(round(lst[1][1]))
+                        if(xset['ptA'][0]>xset['ptB'][0]):
+                            t=xset['ptA']
+                            xset['ptA']=xset['ptB']
+                            xset['ptB']=t
+                        elif(xset['ptA'][0]==xset['ptB'][0]):
+                            if(xset['ptA'][1]>xset['ptB'][1]):
+                                t=xset['ptA']
+                                xset['ptA']=xset['ptB']
+                                xset['ptB']=t
+                elif(xset['type']=='dicti'):
+                    i+=1
+                    stmnt=datln[i]
+                    if(stmnt.startswith('$') or stmnt.startswith('@')):
+                        keys=xset.keys()
+                        if('points' not in keys):
+                            xset['points']=[]
+                        question['data'].append(xset)
+                        break
+                    if(stmnt.startswith('#')):
+                        xset['points']=getdict(stmnt[1:])
+                        globdict=xset['points']

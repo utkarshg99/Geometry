@@ -1,15 +1,32 @@
 >>>>Question 1
-!desc:This is question 1
-##80
-$tangent
-*radius:80
-*thresh:20
-*length:80
-*center:(100,100)
+##40
+!desc: Yeah, A Description Here.
+$dicti
+#A (100,100) B (20,40) C (500,600) D (400,300) E (20,70)
 $circle
 *radius:40
+*center:A
+$tangent
+*length:50
+$chord
+*length:60
+*thresh:10
+$line
 *thresh:20
-*length:80
-*center:(100,100)
+*name:DA
 @end
-%done%
+>>>>Question 2
+!desc: Single Line Descriptions.
+##60
+$dicti
+#A (100,100) B (20,40) C (500,600) D (400,300)
+$circle
+*radius:40
+*center:D
+$tangent
+*length:50
+$chord
+*length:60
+*thresh:10
+@end
+&done&

@@ -39,37 +39,48 @@
 
 #### Currently Supports :
 
+* Dictionary of Points : a statement with point-names in capitals and cordinates in form (x, y), dictionary is local to a particular question
 * Circle : center (center:), radius (radius:), threshold (thresh:), diameter (diamet:)
-* Line : threshold (thresh:), length (length:)
-* Tangent : center (center:), radius (radius:), threshold (thresh:), length (length:)
-* Chord : center (center:), radius (radius:), threshold (thresh:), length (length:)
+* Line : threshold (thresh:), length (length:), end-points (name:)
+* Tangent : center (center:), radius (radius:), threshold (thresh:), length (length:), intersection (int:)
+* Chord : center (center:), radius (radius:), threshold (thresh:), length (length:), intersection (int:)
+
+PS: (name:),(center:),(int:) fields have names of points mentioned already in dictionary.
 
 #### Sample Script:
-Remove Single Quotes
 ```
 >>>>Question 1
 ##40
+!desc: Yeah, A Description Here.
+$dicti
+#A (100,100) B (20,40) C (500,600) D (400,300) E (20,70)
 $circle
 *radius:40
-*center:(100,100)
+*center:A
 $tangent
 *length:50
 $chord
 *length:60
 *thresh:10
+$line
+*thresh:20
+*name:DA
 @end
 >>>>Question 2
-!desc: Single Line Descriptions
+!desc: Single Line Descriptions.
 ##60
+$dicti
+#A (100,100) B (20,40) C (500,600) D (400,300)
 $circle
 *radius:40
-*center:(100,100)
+*center:D
 $tangent
 *length:50
 $chord
 *length:60
 *thresh:10
 @end
-%done%
-
+&done&
 ```
+
+TO ADD : polygons, regular polygons and general statements.
