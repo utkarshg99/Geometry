@@ -1,12 +1,19 @@
+import sys
 import os
 import re
 import json
 import math
 from xtestprocessor import beginUnderstanding
 
-rques=open("../Middleware/rawques.uk",'r')
-ques=open("../Middleware/questions.json",'w')
-status=open("../Middleware/qstatus.uk",'w')
+
+name=sys.argv[1]
+rques='../UserData/'+name+'/rawques.uk'
+ques='../UserData/'+name+'/questions.json'
+status='../UserData/'+name+'/qstatus.uk'
+
+rques=open(rques,'r')
+ques=open(ques,'w')
+status=open(status,'w')
 
 datln=[]
 question={}

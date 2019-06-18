@@ -1,26 +1,26 @@
 import os
+import json
 wd=os.getcwd()
 if(not wd.endswith('Backend')):
     os.chdir(wd+'\Backend')
-while True:
-    flag=0
+def runner():
     while True:
-        fl=open('../Middleware/status.uk','r')
-        gl=open('../Middleware/qstatus.uk','r')
-        st=fl.readline()
-        ts=gl.readline()
-        if(st=='Wait'):
+        name=[]
+        while True:
+            fl=open('../Middleware/userlist.json','r')
+            dicti=json.load(fl)
+            if(len(dicti['awaiting-solve'])!=0):
+                name.append(dicti['awaiting-solve'].pop())
+                fl.close()
+                fl=open('../Middleware/userlist.json','w')
+                fl.write(json.dumps(dicti))
+                fl.close()
+                break
             fl.close()
-            flag=1
-            break
-        if(ts=='Wait'):
-            flag=2
-            gl.close()
-            break
-        gl.close()
-        fl.close()
-    print("Processing at Backend....")
-    if(flag==1):
-        os.system("python3 runner.py")
-    elif(flag==2):
-        os.system("python3 questionparser.py")
+        print("Processing at Backend....")
+        fname="python3 runner.py "+name[0]
+        os.system(fname)
+try:
+    runner()
+except:
+    runner()

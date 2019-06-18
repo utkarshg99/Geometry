@@ -1,0 +1,37 @@
+>>>>Question 1
+##40
+!desc: Yeah, A Description Here.
+$dicti
+#A (100,100) B (20,40) C (500,600) D (400,300) E (20,70) X (200,200)
+$circle
+*radius:40
+*center:A
+$tangent
+*length:50
+$chord
+*length:60
+*thresh:10
+$line
+*thresh:20
+*name:DA
+$poly
+*name:ADCB
+$stat
+*trans:X
+*stat:make a square of side-length 100cm
+@end
+>>>>Question 2
+!desc: Single Line Descriptions.
+##60
+$dicti
+#A (100,100) B (20,40) C (500,600) D (400,300)
+$circle
+*radius:40
+*center:D
+$tangent
+*length:50
+$chord
+*length:60
+*thresh:10
+@end
+&done&

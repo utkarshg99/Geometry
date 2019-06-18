@@ -105,3 +105,49 @@ make a regular hexagon ABCDEF of side-length 50cm (100,100)
 
 draw a line JA (20,40)
 
+make a line of length 30cm starting from (100,100)
+
+make a line of length 30cm starting from A (100,100)
+
+make a line AB of length 100cmname=UTKARSH"
+
+make a line AB of length 100cmname=UTKARSH"
+
+make a line AB of length 100cm
+
+make a line AB of length 100cm
+
+make a line AB of length 100cm
+
+makavfe
+
+make a line of length 100cm
+
+make a line of length 100cm
+
+no shit
+
+no shit
+
+make a line AB of length 100cm
+
+make a line AB of length 100cm
+
+make a line AB of length 100cm
+
+make a line AB of length 100cm
+
+a circle of radius 40cm and center (100,100)
+
+make a line of length 100cm
+
+make a line of length 100cm
+
+make a line of length 100cm
+
+make a line of length 100cm
+
+make a line of length 100cm
+
+make a line of length 100cm
+

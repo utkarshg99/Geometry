@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <script src="./js/connector.js"></script>
+    <script src="./js/authenticator.js"></script>
+    <script src="./js/sha256.js"></script>
+    <script src="./js/register.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div id="hideMe"><br/></div>
+        <br/>
+        <div class="row">
+            <div class="form-group col-md-6">
+                <label for="fullname">Full Name:</label>
+                <input type="text" class="form-control" id="fullname" placeholder="Enter Full Name" name="fullname">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="name">Username:</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter Username" name="name">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter Password" name="password">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="cpassword">Confirm Password:</label>
+                <input type="password" class="form-control" id="cpassword" placeholder="Enter Again" name="cpassword">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="email">E-Mail:</label>
+                <input type="text" class="form-control" id="email" placeholder="Enter E-Mail" name="email">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="organ">Organization:</label>
+                <input type="text" class="form-control" id="organ" placeholder="Enter Organization Name" name="organ">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="secret">Secret Key:</label>
+                <input type="text" class="form-control" id="secret" placeholder="Enter Secret Key" name="secret">
+            </div>
+            <div class="col-md-6" style="text-align: center">
+                <label></label><br/>
+                <button class="btn btn-outline-dark" onclick="frontalChecks();">Register</button>
+            </div>
+        </div>
+    </div>
+</body>

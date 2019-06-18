@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <script src="./js/bHive-1.0.7.js"></script>
+    <script src="./js/connector.js"></script>
+    <script src="./js/make.js"></script>
+    <script src="./js/runner.js"></script>
+    <script src="./js/detector.js"></script>
+    <script src="../Middleware/parser.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="./js/gridmake.js"></script>
+</head>
+
+<body>
+    <div id="stageholder" onmousemove="displayer(event);" onclick="storecrd(event);process();"></div>
+    <div class="container-fluid">
+        <div id="hideMe"><br/></div>
+        <div class="row">
+            <div class="col-md-6">
+                <button onclick="setstat('line')" style="float: right;" class="btn btn-success">Line</button>
+                <button onclick="setsnpstat()" style="float: left;" class="btn btn-warning">Snap to Fit</button>
+            </div>
+            <div style="text-align: left;" class="col-md-6">
+                <button onclick="setstat('circle')" class="btn btn-success" style="float: left;">Circle</button>
+                <button class="btn btn-warning" onclick="setgrdstat(true);" style="float:right;">Make Grid</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div id="cords" style="text-align: center"></div>
+            </div>
+            <div style="text-align: left;" class="col-md-6">
+                <div id="snps" style="text-align: center"></div>
+            </div>
+        </div>
+        <br/>
+        <h3><b>Configure Appearance:</b></h3>
+        <div class="row">
+            <div class="form-group col-md-6">
+                <label for="bgcolor">Background Color:</label>
+                <input type="text" class="form-control" id="bgcolor" placeholder="Enter Background Color"
+                    name="bgcolor">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="fillcolor">Fill Color:</label>
+                <input type="text" class="form-control" id="fillcolor" placeholder="Enter Fill Color" name="fillcolor">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <button class="btn btn-primary" onclick="configure();hideBreak();" autofocus>Set Parameters</button>
+            </div>
+            <div class="col-md-6">
+                <button class="btn btn-primary" onclick="getques(6060);" autofocus>Get Questions</button>
+            </div>
+        </div>
+        <div><br /></div>
+        <div class="row">
+            <div class="col-md-12 form-group"><br />
+                <div>Current Score : <b><span id="score">0</span></b><br/><br/></div>
+                <div id="quesarea"></div>
+            </div>
+        </div>
+    </div>
+</body>

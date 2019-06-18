@@ -1,3 +1,4 @@
+import sys
 import re
 import json
 from helpers import getdict as gt
@@ -16,17 +17,23 @@ dicti={}
 lj=[]
 cj=[]
 pj=[]
+name=sys.argv[1]
+linejobs='../UserData/'+name+'/linejobs.uk'
+circlejobs='../UserData/'+name+'/circlejobs.uk'
+polyjobs='../UserData/'+name+'/polyjobs.uk'
+cmds='../UserData/'+name+'/commands.uk'
+status='../UserData/'+name+'/status.uk'
 
 commandlist={'clear stack':'reset point stack','status':'show all queued jobs','clear all':'reset application status','pop [_point(s)_]':'remove specified points from stack'}
 fly=open('./results/command.txt','a')
 mkd=open('./results/resuting.txt','a')
 lists=open('./results/lists.txt','a')
 dic=open('./results/dictionaries.txt','a')
-linejobs=open('../Middleware/linejobs.uk','w')
-circlejobs=open('../Middleware/circlejobs.uk','w')
-polyjobs=open('../Middleware/polyjobs.uk','w')
-cmds=open('../Middleware/commands.uk','r')
-status=open('../Middleware/status.uk','w')
+linejobs=open(linejobs,'w')
+circlejobs=open(circlejobs,'w')
+polyjobs=open(polyjobs,'w')
+cmds=open(cmds,'r')
+status=open(status,'w')
 
 while True:
     # strn=input('Enter the command -> (Leave it empty to end excution) <- : ')

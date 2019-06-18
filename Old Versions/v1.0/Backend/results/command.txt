@@ -1,0 +1,111 @@
+
+sdfdsffsg
+
+make a circle of radius  40cm and centre (0,0)
+
+make a circle of radius 40cm and center (100, 100)
+
+make a circle of radius 100cm and radius (200,200)
+
+make a circle of radius 100cm and radius (200,200)
+
+make a line between (100,100) and (200,200)
+
+make a circle of radius 100cm and center (0,0)
+
+make a circle of radius 40cm and centre (0,0)
+
+make a circle of radius 40cm and centre (0,0)
+
+make a circle of radius 40cm and centre (100,100)
+
+make a circle of radius 40cm and centre (500,400)
+
+make a circle of radius 40cm and centre (600,350)
+
+make a circle of radius 40cm and center (0,0)
+
+make a circle of radius 40cm and center (0,0)
+
+make a circle of radius 40cm and center (0,0)
+
+make a circle of radius 40cm and center (100,100)
+
+make a line of length 40 cm
+
+make a line of length 40 cm 
+
+the line between the coordinates (100,100) and (200, 200)
+
+make a line of length 40 cm 
+
+the line between the coordinates (100,100) and (200, 200)
+
+the line between the coordinates (100,100) and (200, 200)
+
+make a line between the coordinates (100, 100) and (200, 200)
+
+join (100, 100) and (200, 200)
+
+the line between the coordinates (100,100) and (200, 200)
+
+the line between the coordinates A (100,100) and B (200, 200)
+
+make a circle of radius 100cm
+
+make a circle of radius 300cm
+
+make a line AB (80,80) and (160,160)
+
+make a square of side-length 40cm
+
+let AB be (100,100) and (400,300)
+
+draw a line AB
+
+let AB be (100,100) and (400,300)
+
+draw a line AB
+
+let AB be (100,100) and (400,300)
+
+line: AB
+
+AB as (90,80) and (45,50)
+
+stat:draw a line AB
+
+AB as (90,80) and (45,50)
+
+stat:draw a line AB
+
+AB as (90,80) and (45,50)
+
+make ABCDEF (100,100) (200,200) (300,400) (190,160) (430,560) (640,720)
+
+ABCDEF (100,100) (200,200) (300,400) (190,160) (430,560) (640,720)
+
+ABCDEF (100,100) (200,200) (300,400) (190,160) (430,560) (640,720)
+
+make a regular hexagon ABCDEF of side-length 160cm
+
+make a regular hexagon of side-length 160cm
+
+make a regular hexagon of side-length 10cm
+
+make a regular hexagon of side-length 10cm (100,100)
+
+make a regular hexagon of side-length 50cm (100,100)
+
+make a regular hexagon ABCDEF of side-length 50cm (100,100)
+
+make a regular hexagon ABCDEF of side-length 50cm (100,100)
+
+make a regular hexagon ABCDEF of side-length 50cm (100,100)
+
+draw a line JA (20,40)
+
+make a line of length 30cm starting from (100,100)
+
+make a line of length 30cm starting from A (100,100)
+
