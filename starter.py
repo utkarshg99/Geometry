@@ -8,4 +8,4 @@ if(os.name=='posix'):
     os.system('python3 ./Backend/runit.py &')
     os.system('python3 ./Backend/qrunit.py &')
     os.system('node ./Middleware/strserve.js &')
-    os.system('./Frontend/UI.html &')
+    # os.system('w3m ./Frontend/UI.html &')

@@ -3,11 +3,12 @@ import json
 from pymongo import MongoClient
 from pprint import pprint
 
+print("Computation Engine")
 client = MongoClient('mongodb://127.0.0.1:27017/')
 db=client.admin
 wd=os.getcwd()
 if(not wd.endswith('Backend')):
-    os.chdir(wd+'\Backend')
+    os.chdir(wd+'/Backend')
 def runner():
     while True:
         while True:
