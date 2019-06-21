@@ -98,29 +98,30 @@ function register(post) {
         });
         newincdata.save(function (err) {
             if (err) throw err;
-            let newrespdata = new Retdata({
-                _id: new mongoose.Types.ObjectId(),
-                useradresp: newuser._id
-            });
-            newrespdata.save(function (err) {
-                if (err) throw err;
-                let newquesdata = new Quesdata({
-                    _id: new mongoose.Types.ObjectId(),
-                    usersdinp: newuser._id
-                });
-                newquesdata.save(function (err) {
-                    if (err) throw err;
-                    let newquesrespdata = new Quesrespdata({
-                        _id: new mongoose.Types.ObjectId(),
-                        usersdresp: newuser._id
-                    });
-                    newquesrespdata.save(function (err) {
-                        if (err) return err;
-                    });
-                });
-            });
+        });
+        let newrespdata = new Retdata({
+            _id: new mongoose.Types.ObjectId(),
+            useradresp: newuser._id
+        });
+        newrespdata.save(function (err) {
+            if (err) throw err;
+        });
+        let newquesdata = new Quesdata({
+            _id: new mongoose.Types.ObjectId(),
+            usersdinp: newuser._id
+        });
+        newquesdata.save(function (err) {
+            if (err) throw err;
+        });
+        let newquesrespdata = new Quesrespdata({
+            _id: new mongoose.Types.ObjectId(),
+            usersdresp: newuser._id
+        });
+        newquesrespdata.save(function (err) {
+            if (err) return err;
         });
     });
+
     var promiseforreg = new Promise(function (resolve, reject) {
         if (userid != 0)
             resolve(userid);

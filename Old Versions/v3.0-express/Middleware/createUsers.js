@@ -18,6 +18,14 @@ function makeUser(username, incoming) {
         newincdata.save(function (err) {
             if (err) throw err;
             console.log('Incoming Data Recorded');
+            // let newrecdata = new Retdata({
+            //     _id: new mongoose.Types.ObjectId(),
+            //     user: newuser._id
+            // });
+            // newrecdata.save(function (err) {
+            //     if (err) throw err;
+            //     console.log('Receiver for data created');
+            // })
         });
     });
 }
