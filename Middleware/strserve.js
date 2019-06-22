@@ -7,6 +7,7 @@ let Retdata = require('./retdataSchema.js');
 let Quesdata = require('./quesData.js');
 let Quesrespdata = require('./quesResp.js');
 let express = require('express')
+var path = require('path')
 var app = express()
 var router = express.Router()
 var port = 8080
@@ -415,6 +416,12 @@ mongoose.connect('mongodb://127.0.0.1:27017/admin', options, function (err) {
             });
         });
     });
+
+    router.get('/',function(req,res){
+        res.sendFile(path.join(__dirname+'/../Frontend/UI.html'));
+    });
+
     app.use('/',router)
+    app.use(express.static('../Frontend/'))
     app.listen(port)
 });
