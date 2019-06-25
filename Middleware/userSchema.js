@@ -8,11 +8,11 @@ var user = new Schema({
     password:String,
     status: {
         type: Boolean,
-        default: true
+        default: false
     },
     processed: {
         type: Boolean,
-        default: true
+        default: false
     },
     created: {
         type: Date,

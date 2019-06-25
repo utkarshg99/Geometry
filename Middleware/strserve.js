@@ -424,6 +424,10 @@ mongoose.connect('mongodb://127.0.0.1:27017/admin', options, function (err) {
         res.sendFile(path.join(__dirname+'/../Frontend/UI.html'));
     });
 
+    router.get('/Middleware/parser.js',function(req,res){
+        res.sendFile(path.join(__dirname+'/parser.js'));
+    });
+
     app.use('/',express.static(__dirname+'/../Frontend/'))
     app.use('/',router)
     app.listen(port)
