@@ -10,7 +10,10 @@ let express = require('express')
 var path = require('path')
 var app = express()
 var router = express.Router()
-var port = 8080
+var port = process.env.PORT
+if (port == null || port == "") {
+  port = 8080
+}
 
 function splitit(state) {
     state = state.split('\n');
@@ -421,7 +424,11 @@ mongoose.connect('mongodb://127.0.0.1:27017/admin', options, function (err) {
         res.sendFile(path.join(__dirname+'/../Frontend/UI.html'));
     });
 
+    router.get('/Middleware/parser.js',function(req,res){
+        res.sendFile(path.join(__dirname+'/parser.js'));
+    });
+
+    app.use('/',express.static(__dirname+'/../Frontend/'))
     app.use('/',router)
-    app.use(express.static('../Frontend/'))
     app.listen(port)
 });

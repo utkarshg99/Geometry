@@ -33,7 +33,7 @@
 ### Architecture:
 ![alt text](https://firebasestorage.googleapis.com/v0/b/utkarshgx.appspot.com/o/images%2FGeometry.jpg?alt=media&token=6f660d61-6b06-4daf-865d-c3e624d034bd)
 
-### To RUN : Execute geometry.exe on windows. Alternatively, use "python starter.py"
+## Accessible ONLINE at : https://geometry-utkarshg.herokuapp.com
 
 ### Uploading Questions using UK-LANG:
 
