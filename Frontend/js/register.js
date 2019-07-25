@@ -56,7 +56,8 @@ function regis(port) {
     emailx = 'email=' + emailx.substring(3, emailx.length - 3).replace(/%5Cn/g, '%0A');
     req = req + '&' + namex + '&' + codex + '&' + fnamex + '&' + organx + '&' + seckx + '&' + emailx;
     var xhr = new XMLHttpRequest();
-    var url = "http://localhost:" + port;
+    // var url = "http://localhost:" + port;
+    var url = "http://172.27.36.31/register"
     xhr.open("POST", url, true);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xhr.onreadystatechange = function () {

@@ -10,7 +10,8 @@ function go(port) {
     idx = 'id=' + idx.substring(3, idx.length - 3).replace(/%5Cn/g, '%0A');
     req = req + '&' + idx;
     var xhr = new XMLHttpRequest();
-    var url = "http://localhost:" + port;
+    // var url = "http://localhost:" + port;
+    var url = "http://172.27.36.31/savecommands"
     xhr.open("POST", url, true);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xhr.onreadystatechange = function () {
@@ -37,7 +38,8 @@ function getResponse(port){
     idx = 'id=' + idx.substring(3, idx.length - 3).replace(/%5Cn/g, '%0A');
     req = idx;
     var xhr = new XMLHttpRequest();
-    var url = "http://localhost:" + port;
+    // var url = "http://localhost:" + port;
+    var url = "http://172.27.36.31/getresultsad"
     xhr.open("POST", url, true);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xhr.onreadystatechange = function () {
@@ -62,7 +64,8 @@ function getques(port) {
     req = encodeURIComponent(JSON.stringify(st));
     req = 'username=' + req.substring(3, req.length - 3).replace(/%5Cn/g, '%0A');
     var xhr = new XMLHttpRequest();
-    var url = "http://localhost:" + port;
+    // var url = "http://localhost:" + port;
+    var url = "http://172.27.36.31/getresultssd"
     xhr.open("POST", url, true);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xhr.onreadystatechange = function () {
@@ -90,7 +93,8 @@ function goq(port) {
     idx = 'id=' + idx.substring(3, idx.length - 3).replace(/%5Cn/g, '%0A');
     req = req + '&' + idx;
     var xhr = new XMLHttpRequest();
-    var url = "http://localhost:" + port;
+    // var url = "http://localhost:" + port;
+    var url = "http://172.27.36.31/savequestions"
     xhr.open("POST", url, true);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xhr.onreadystatechange = function () {

@@ -17,7 +17,8 @@ function getAccess(port){
     codex = 'pass=' + codex.substring(3, codex.length - 3).replace(/%5Cn/g, '%0A');
     req = req + '&' + namex + '&' + codex;
     var xhr = new XMLHttpRequest();
-    var url = "http://localhost:" + port;
+    // var url = "http://localhost:" + port;
+    var url = "http://172.27.36.31/auth"
     xhr.open("POST", url, true);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xhr.onreadystatechange = function () {
