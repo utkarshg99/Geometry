@@ -31,7 +31,7 @@
 * 'calculate distance <Points_or_coordinates -> Only  one of them>' : return distance between the first two points.
 
 ### Architecture:
-![alt text](https://firebasestorage.googleapis.com/v0/b/utkarshgx.appspot.com/o/images%2FGeometry.jpg?alt=media&token=6f660d61-6b06-4daf-865d-c3e624d034bd)
+![alt text](https://firebasestorage.googleapis.com/v0/b/utkarshgx.appspot.com/o/images%2FGeometry%20New.jpg?alt=media&token=5b3e9747-a134-4e5d-9eda-3d10a9fa8d5b)
 
 ## Accessible ONLINE at : https://geometry-utkarshg.herokuapp.com
 
