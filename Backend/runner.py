@@ -111,7 +111,7 @@ for strn in statement:
             polyjobs=polyjobs+(str(x)+'\n')
         if(polyjobs==''):
             polyjobs=polyjobs+'\n'
-        db.retdatas.update_one({'useradresp' : uid}, {'$set' : {'pj' : pj}})        
+        db.retdatas.update_one({'useradresp' : uid}, {'$set' : {'pj' : polyjobs}})        
         break
 
     dicti = gt(strn, dicti)
